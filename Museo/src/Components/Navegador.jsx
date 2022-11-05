@@ -11,9 +11,9 @@ export const Navegador = () => {
   return (
     <>
       {['md'].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+        <Navbar key={expand} bg="light" expand={expand} className="mb-0">
           <Container fluid>
-            <Navbar.Brand href="#">Museo Parrandas</Navbar.Brand>
+            <Navbar.Brand href="#">Museo De Las Parrandas</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}

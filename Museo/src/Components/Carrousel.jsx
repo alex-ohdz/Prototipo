@@ -9,10 +9,12 @@ export const Carrousel = () => {
   };
 
   return (
+    
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <img
           className="d-block w-100"
+          id="carusel"
           src="src/Images/gettyimages-78011146-612x612.jpg"
           alt="First slide"
         />
@@ -24,6 +26,7 @@ export const Carrousel = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
+          id="carusel"
           src="src/Images/gettyimages-912041358-612x612.jpg"
           alt="Second slide"
         />
@@ -36,6 +39,7 @@ export const Carrousel = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
+          id="carusel"
           src="src/Images/gettyimages-915844532-612x612.jpg"
           alt="Third slide"
         />
@@ -48,6 +52,8 @@ export const Carrousel = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    
   );
+
 }
 

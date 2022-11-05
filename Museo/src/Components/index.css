@@ -1,10 +1,22 @@
-.navbar>.container-fluid{
-	font-family: Helvetica, Arial, sans-serif;
-	background-color: rgb(206, 187, 113);
-    padding: 1.5%;
-  }
-body{
-	padding-left: 1%;
-	padding-right: 1%;
-	padding-top: 0%;
-};
+.navbar{
+  font-family: 'Helvetica Now', 'Arial', 'sans-serif'; 
+}
+.navbar-nav .nav-link:hover{
+	color: orange;
+}
+img#carusel {
+  height: 650px;
+
+  
+}
+/* #root > div > a.carousel-control-prev{
+
+}
+.carousel-control-prev-icon{
+
+} */
+body {
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0%;
+}
