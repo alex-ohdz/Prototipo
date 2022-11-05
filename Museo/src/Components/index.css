@@ -1,0 +1,10 @@
+.navbar>.container-fluid{
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: rgb(206, 187, 113);
+    padding: 1.5%;
+  }
+body{
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 0%;
+};
