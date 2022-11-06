@@ -1,22 +1,31 @@
-.navbar{
-  font-family: 'Helvetica Now', 'Arial', 'sans-serif'; 
+body {
+  background-color: #eee;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0%;
 }
-.navbar-nav .nav-link:hover{
-	color: orange;
+.navbar {
+  font-family: "Helvetica Now", "Arial", "sans-serif";
 }
-img#carusel {
+.navbar-nav .nav-link:hover {
+  color: orange;
+}
+#root > div.g-4.mt-0.row.row-cols-lg-4.row-cols-md-3.row-cols-2{
+  margin-left: 0%;
+  margin-right: 0%;
+}
+/* img#carusel {
   height: 650px;
 
   
+} */
+#root > div.row {
+  background-color: rgb(227, 167, 167);
 }
+
 /* #root > div > a.carousel-control-prev{
 
 }
 .carousel-control-prev-icon{
 
 } */
-body {
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-top: 0%;
-}

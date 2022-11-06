@@ -10,19 +10,18 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 export const Navegador = () => {
   return (
     <>
-      {['md'].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-0">
+        <Navbar key={'md'} bg="light" expand={'md'} className="mb-3">
           <Container fluid>
             <Navbar.Brand href="#">Museo De Las Parrandas</Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${'md'}`} />
             <Navbar.Offcanvas
-              id={`offcanvasNavbar-expand-${expand}`}
-              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="end"
+              id={`offcanvasNavbar-expand-${'md'}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${'md'}`}
+              placement="top"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${'md'}`}>
+                  Museo De las Parrandas
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -31,7 +30,7 @@ export const Navegador = () => {
                   <Nav.Link href="#action2">Link</Nav.Link>
                   <NavDropdown
                     title="Dropdown"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
+                    id={`offcanvasNavbarDropdown-expand-${'md'}`}
                   >
                     <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                     <NavDropdown.Item href="#action4">
@@ -56,7 +55,6 @@ export const Navegador = () => {
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
-      ))}
     </>
   );
 }
