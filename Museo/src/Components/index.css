@@ -10,7 +10,7 @@ body {
 .navbar-nav .nav-link:hover {
   color: orange;
 }
-#root > div.g-4.mt-0.row.row-cols-lg-4.row-cols-md-3.row-cols-2{
+#root > div.row{
   margin-left: 0%;
   margin-right: 0%;
 }
