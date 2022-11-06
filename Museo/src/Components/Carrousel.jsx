@@ -15,7 +15,7 @@ export const Carrousel = () => {
         <img
           className="d-block w-100"
           id="carusel"
-          src="src/Images/5.jpg"
+          src="src/Images/caruselImg/5.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -27,7 +27,7 @@ export const Carrousel = () => {
         <img
           className="d-block w-100"
           id="carusel"
-          src="src/Images/1.jpg"
+          src="src/Images/caruselImg/2.jpg"
           alt="Second slide"
         />
 
@@ -40,7 +40,7 @@ export const Carrousel = () => {
         <img
           className="d-block w-100"
           id="carusel"
-          src="src/Images/2.jpg"
+          src="src/Images/caruselImg/3.jpg"
           alt="Third slide"
         />
 
