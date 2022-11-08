@@ -4,9 +4,23 @@ body {
   padding-right: 1%;
   padding-top: 0%;
 }
-.navbar {
-  font-family: "Helvetica Now", "Arial", "sans-serif";
+#destacado > div > div >div.cartas{
+  
+  background-color: rgb(255, 255, 255);
 }
+#destacado > div > div{
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+
+.navbar-brand {
+  color: #dc3545;
+}
+.navbar {
+  font-family: "Calisto Mt","Helvetica Now", "Arial", "sans-serif";
+}
+
 .navbar-nav .nav-link:hover {
   color: orange;
 }
@@ -14,18 +28,22 @@ body {
   margin-left: 0%;
   margin-right: 0%;
 }
-/* img#carusel {
-  height: 650px;
+#root > nav {
+  background-color: #eee;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
 
+#root > div#destacado {
+  background-color: rgb(39, 32, 32);
+  padding-bottom: 5%;
+}
+#destacado > h2{
+  padding-top: 4% ;
+  padding-bottom: 2%;
+  text-align: center;
+  color: rgb(255, 255, 255) ;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   
-} */
-#root > div.row {
-  background-color: rgb(227, 167, 167);
 }
 
-/* #root > div > a.carousel-control-prev{
-
-}
-.carousel-control-prev-icon{
-
-} */

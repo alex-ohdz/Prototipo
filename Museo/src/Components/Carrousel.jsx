@@ -7,53 +7,50 @@ export const Carrousel = () => {
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
-
+ 
+  const caruselInfo = [
+    {
+      image: "src/Images/caruselImg/2.jpg",
+      title: "DOS3",
+      text: "Probandoooooo2222",
+    },
+    {
+      image: "src/Images/caruselImg/3.jpg",
+      title: "DOS3",
+      text: "Probandoooooo2222",
+    },
+    {
+      image: "src/Images/caruselImg/5.jpg",
+      title: "DOS3",
+      text: "Probandoooooo2222",
+    },
+    {
+      image: "src/Images/caruselImg/5.jpg",
+      title: "DOS3",
+      text: "Probandoooooo2222",
+    },
+  ];
+  const renderCarusel = (carusel, index) => {
   return (
-    
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
+  
+      <Carousel.Item key={index}>
         <img
           className="d-block w-100"
-          id="carusel"
-          src="src/Images/caruselImg/5.jpg"
+          src={carusel.image}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>{carusel.title}</h3>
+          <p>{carusel.text}</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          id="carusel"
-          src="src/Images/caruselImg/2.jpg"
-          alt="Second slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          id="carusel"
-          src="src/Images/caruselImg/3.jpg"
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-    
+   
   );
-
 }
 
+return(
+  <Carousel activeIndex={index} onSelect={handleSelect}>
+    {caruselInfo.map(renderCarusel)}
+    </Carousel>
+)
+};

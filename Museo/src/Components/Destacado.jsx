@@ -29,7 +29,7 @@ export const Destacado = () => {
     return (
       <>
         <Col>
-          <Card className="shadow bg-white rounded" key={index}>
+          <Card className="shadow rounded cartas" key={index} >
             <Card.Img variant="top" src={card.image} />
             <Card.Body>
               <Card.Title>{card.title}</Card.Title>
@@ -41,8 +41,11 @@ export const Destacado = () => {
     );
   };
   return (
-    <Row xs={1} sm={2} md={3} lg={4} className="g-4 mt-0">
-      {cardInfo.map(renderCard)}
-    </Row>
+    <div id="destacado">
+      <h2>DESTACADO</h2>
+      <Row xs={2} sm={2} md={3} lg={4} className="g-4">
+        {cardInfo.map(renderCard)}
+      </Row>
+    </div>
   );
 };
