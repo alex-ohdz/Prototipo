@@ -9,7 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^5.2.2",
+    "bootstrap-icons": "^1.9.1",
+    "i": "^0.3.7",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0"

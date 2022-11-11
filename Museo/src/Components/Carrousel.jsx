@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
+
 export const Carrousel = () => {
+  
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -24,11 +26,7 @@ export const Carrousel = () => {
       title: "DOS3",
       text: "Probandoooooo2222",
     },
-    {
-      image: "src/Images/caruselImg/5.jpg",
-      title: "DOS3",
-      text: "Probandoooooo2222",
-    },
+ 
   ];
   const renderCarusel = (carusel, index) => {
   return (

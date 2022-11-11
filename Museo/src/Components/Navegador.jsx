@@ -10,7 +10,7 @@ export const Navegador = () => {
     <>
         <Navbar key={'md'} expand={'md'}>
           <Container fluid>
-            <Navbar.Brand href="#">Museo De Las Parrandas</Navbar.Brand>
+            <Navbar.Brand href="#"><span><img src="src\Images\Iconos\person-circle.svg" alt="" /></span>Museo De Las Parrandas</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${'md'}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${'md'}`}
@@ -19,7 +19,7 @@ export const Navegador = () => {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${'md'}`}>
-                  Museo De las Parrandas
+                <span><img src="src\Images\Iconos\person-circle.svg" alt="" /></span>Museo De Las Parrandas
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -41,15 +41,6 @@ export const Navegador = () => {
                     </NavDropdown.Item>
                   </NavDropdown> */}
                 </Nav>
-                {/* <Form className="d-flex">
-                  <Form.Control
-                    type="search"
-                    placeholder="Search"
-                    className="me-3"
-                    aria-label="Search"
-                  />
-                  <Button variant="outline-success">Search</Button>
-                </Form> */}
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

@@ -1,49 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: #eee;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-top: 0%;
 }
-#destacado > div > div >div.cartas{
-  
+#destacado > div > div > div.cartas {
   background-color: rgb(255, 255, 255);
 }
-#destacado > div > div{
+#destacado > div > div {
   padding-left: 5%;
   padding-right: 5%;
-
 }
 
 .navbar-brand {
   color: #dc3545;
 }
 .navbar {
-  font-family: "Calisto Mt","Helvetica Now", "Arial", "sans-serif";
+  font-family: "Calisto Mt", "Helvetica Now", "Arial", "sans-serif";
 }
-
+#offcanvasNavbar-expand-md > div.offcanvas-body > div > a {
+  color: rgb(255, 255, 255);
+}
+#offcanvasNavbar-expand-md {
+  background-color: #a8a8a8;
+}
 .navbar-nav .nav-link:hover {
   color: orange;
 }
-#root > div.row{
-  margin-left: 0%;
-  margin-right: 0%;
-}
+
 #root > nav {
-  background-color: #eee;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: rgba(41, 36, 36, 0.5);
   padding-bottom: 1%;
   padding-top: 1%;
 }
+#root > nav > div > button {
+  background-color: rgba(41, 36, 36, 0.5);
+  border-color: rgba(41, 36, 36, 0.5);
+}
+
+#root > nav > div > a {
+  color: #eee;
+}
 
 #root > div#destacado {
-  background-color: rgb(39, 32, 32);
+  background-color: rgb(65, 50, 50);
   padding-bottom: 5%;
 }
-#destacado > h2{
-  padding-top: 4% ;
+#destacado > h2 {
+  padding-top: 4%;
   padding-bottom: 2%;
   text-align: center;
-  color: rgb(255, 255, 255) ;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
+  color: rgb(255, 255, 255);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#root > nav > div > a > span > img {
+  width: 35px;
+}
+#offcanvasNavbarLabel-expand-md > span > img {
+  width: 35px;
 }
 
+div.redes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+ 
+}
+.redes ul li{
+  display: inline-block;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  
+}
+.redes ul li a{
+  margin-top: 15px;
+  display: block;
+  padding: 0 10px;
+  border-radius: 12px 12px 12px 12px;
+  background-color: #333;
+  color: #fff;
+  line-height: 40px;
+  font-size: 18px;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+  transition:.2s;
+} 
+.redes ul:hover a{
+  filter: blur(2px);
+}
+.redes ul li a:hover{
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+  filter: none;
+}
+#root > footer > div > ul > li:nth-child(1) > a:hover{
+  background-color: rgb(228, 97, 61);
+}
+#root > footer > div > ul > li:nth-child(2) > a:hover{
+  background-color: #1a0dab;
+}
+#root > footer > div > ul > li:nth-child(3) > a:hover{
+  background-color: #006917;
+}
+#root > footer > div > ul > li:nth-child(4) > a:hover{
+  background-color: #a90101;
+}
