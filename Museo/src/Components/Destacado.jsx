@@ -24,15 +24,24 @@ export const Destacado = () => {
       title: "DOS3",
       text: "Probandoooooo2222",
     },
+    {
+      image: "src/Images/cartasDes/1.jpg",
+      title: "mgAAA",
+      text: "Probandoooooo",
+    },
+    {
+      image: "src/Images/cartasDes/1.jpg",
+      title: "mgAAA",
+      text: "Probandoooooo",
+    },
   ];
   const renderCard = (card, index) => {
     return (
       <>
         <Col>
           <Card
-            className="shadow rounded cartas"
-            data-aos="fade-up"
-            data-aos-duration="2000"
+            className="cartas"
+            data-aos="zoom-out-up"
             key={index}
           >
             <Card.Img variant="top" src={card.image} />

@@ -4,7 +4,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-
+// import { Route, Routes } from "react-router-dom";
+// import { Colleccion } from "./CollectionPages/Colleccion";
+// import { MuseoApp } from './MuseoApp';
 export const Navegador = () => {
   return (
     <>
@@ -23,10 +25,10 @@ export const Navegador = () => {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav>
                   <Nav.Link href="#action1">Visita</Nav.Link>
-                  <Nav.Link href="#action2">Arte e Historia</Nav.Link>
-                  <Nav.Link href="#action3">Eventos</Nav.Link>
+                  <Nav.Link href="#action2">Eventos</Nav.Link>
+                  <Nav.Link to="/collecion">Colecciones</Nav.Link>
                   {/* <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-${'md'}`}

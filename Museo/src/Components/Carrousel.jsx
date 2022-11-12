@@ -26,16 +26,15 @@ export const Carrousel = () => {
       title: "DOS3",
       text: "Probandoooooo2222",
     },
- 
-  ];
+     ];
   const renderCarusel = (carusel, index) => {
   return (
   
       <Carousel.Item key={index}>
         <img
-          className="d-block w-100"
+          className="d-block w-100 carusel"
           src={carusel.image}
-          alt="First slide"
+          alt=""
         />
         <Carousel.Caption>
           <h3>{carusel.title}</h3>
