@@ -5,18 +5,15 @@ body {
   overflow-x: hidden;
 }
 #root > nav{
-  position:absolute;
+  position: absolute;
   top:0;
   left:0;
   width:100%;
+  align-items: center;
   background-color: rgba(186, 186, 186, 0.717);
   z-index:1000;
   border-bottom: #000000 solid 1px;
 }
-/* .offcanvas.offcanvas-top{
-  position: fixed;
-
-} */
 #root > nav > div > a {
   font-family: "Calisto Mt", "Helvetica Now", "Arial", "sans-serif";
   outline: none;
@@ -31,18 +28,27 @@ body {
   border-color: #ffffff;
 }
 #offcanvasNavbar-expand-md {
-  overflow: hidden;
-  font-family: "Calisto Mt", "Helvetica Now", "Arial", "sans-serif";
-  padding-bottom: 50px;
   padding: 5px 0px;
   display: block;
   text-align: center;
   background-color: rgb(255, 255, 255);
 }
-#offcanvasNavbar-expand-md > div.offcanvas-body {
-  padding-top: 0px;
-  padding-bottom: 0px;
+#offcanvasNavbar-expand-md > div.offcanvas-body > div > a{
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 17px;
+  font-weight: 600;
 }
+
+#offcanvasNavbar-expand-md > div.offcanvas-body > div > a:hover{
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+
 #offcanvasNavbar-expand-md > div.offcanvas-header {
   padding: 0em 1em;
   background-color: rgb(255, 255, 255);
@@ -146,26 +152,26 @@ div.redes {
 }
 .redes ul li a {
   margin-top: 15px;
-  display: block;
-  padding: 0 10px;
-  border-radius: 12px 12px 12px 12px;
-  background-color: #333;
-  color: #fff;
-  line-height: 40px;
-  font-size: 18px;
-  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
-  transition: 0.2s;
+  /* padding: 0 10px; */
+  /* border: #000000 solid 1px;
+  border-radius: 25px 25px 25px 25px; */
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  line-height: 50px;
+  font-size: 20px;
+  text-decoration: none;
+  /* transition: 0.2s; */
 }
-.redes ul:hover a {
+/* .redes ul:hover a {
   filter: blur(2px);
 }
 .redes ul li a:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
   filter: none;
-}
+} */
 
-#root > footer > div > ul > li:nth-child(1) > a:hover {
+/* #root > footer > div > ul > li:nth-child(1) > a:hover {
   background-color: rgb(228, 97, 61);
 }
 #root > footer > div > ul > li:nth-child(2) > a:hover {
@@ -176,7 +182,7 @@ div.redes {
 }
 #root > footer > div > ul > li:nth-child(4) > a:hover {
   background-color: #a90101;
-}
+} */
 /* ------------------Pagina de Collecciones------- */
 #ImgCollecion > h1 {
   font-family: 'Gotham SSm A', 'Gotham SSm B';

@@ -4,13 +4,7 @@ import { MuseoApp } from "./MuseoApp";
 import { Colleccion } from "./CollectionPages/Colleccion";
 import { Eventos } from "./EventosPages/Eventos";
 import { Visita } from "./VisitasPage/Visita";
-import { Footer } from "./Footer";
-import { Carrousel } from "./Carrousel";
-import { Destacado } from "./Destacado";
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
-import "./index.css";
+
 
 
 
