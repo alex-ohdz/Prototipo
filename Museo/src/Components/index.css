@@ -1,26 +1,65 @@
 /* ----------------Navegador-------------------------------- */
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
-
-.navbar {
-  font-family: "Calisto Mt", "Helvetica Now", "Arial", "sans-serif";
-  background-color: #f9f9f9;
+#root > nav{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  background-color: rgba(186, 186, 186, 0.717);
+  z-index:1000;
+  border-bottom: #000000 solid 1px;
 }
+/* .offcanvas.offcanvas-top{
+  position: fixed;
 
-#root > nav > div > button{
+} */
+#root > nav > div > a {
+  font-family: "Calisto Mt", "Helvetica Now", "Arial", "sans-serif";
+  outline: none;
+  text-decoration: none;
+}
+#root > nav > div > button {
   padding: 15px 15px;
   text-align: center;
   text-decoration: none;
   font-size: 8px;
   border-radius: 12px;
+  border-color: #ffffff;
 }
 #offcanvasNavbar-expand-md {
-  background-color: #a8a8a8;
+  overflow: hidden;
+  font-family: "Calisto Mt", "Helvetica Now", "Arial", "sans-serif";
+  padding-bottom: 50px;
+  padding: 5px 0px;
+  display: block;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+#offcanvasNavbar-expand-md > div.offcanvas-body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#offcanvasNavbar-expand-md > div.offcanvas-header {
+  padding: 0em 1em;
+  background-color: rgb(255, 255, 255);
+}
+#offcanvasNavbar-expand-md > div.offcanvas-body > div > a {
+  outline: none;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding-right: 15px;
+}
+.navbar-expand-md .offcanvas .offcanvas-body {
+  justify-content: end;
+  margin-right: 10px;
+  font-size: 18px;
 }
 
-#offcanvasNavbar-expand-md > div.offcanvas-body{
+#offcanvasNavbarLabel-expand-md > a {
   overflow: hidden;
   font-family: "Calisto Mt", "Helvetica Now", "Arial", "sans-serif";
   font-weight: 500;
@@ -28,17 +67,19 @@ html, body {
   text-transform: uppercase;
   padding: 10px 0px;
   display: block;
-  text-align: center;  
-} 
+  text-align: center;
+  color: rgb(0, 0, 0);
+  outline: none;
+  text-decoration: none;
+}
 #root > nav > div > a > span > img {
   width: 35px;
 }
-#offcanvasNavbarLabel-expand-md > span > img {
+#offcanvasNavbarLabel-expand-md > a > img {
   width: 35px;
-} 
+}
 
 /* --------------Zona Carrusel------------------------------ */
-
 
 /* --------------Zona Cards------------------------------ */
 #destacado > div > div > div.cartas {
@@ -48,10 +89,10 @@ html, body {
   border-width: 0px;
 }
 
-#destacado > div > div > div > img{
+#destacado > div > div > div > img {
   border-radius: 12px 12px 0px 0px;
 }
- #destacado > div > div {
+#destacado > div > div {
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -65,10 +106,10 @@ html, body {
   text-align: center;
   color: rgb(255, 255, 255);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-} 
-/* --------------------Footer--------------------------- */
+}
+/* --------------------Footer---------------------------*/
 
- #seccionA > div.info {
+#seccionA > div.info {
   padding-top: 15px;
   padding-left: 25px;
   background-color: #eee;
@@ -89,7 +130,7 @@ html, body {
   margin: 5px 0;
   color: #000000;
   border-top: 2px solid;
-} 
+}
 
 div.redes {
   display: flex;
@@ -135,16 +176,17 @@ div.redes {
 }
 #root > footer > div > ul > li:nth-child(4) > a:hover {
   background-color: #a90101;
-} 
-
-
-
-
-
-
-
-
-
+}
+/* ------------------Pagina de Collecciones------- */
+#ImgCollecion > h1 {
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  color: #9d9d9d;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  line-height: 130%;
+}
 
 
 

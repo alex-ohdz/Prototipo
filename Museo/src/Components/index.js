@@ -1,13 +1,17 @@
+//autocerrar offcanvas entrar en otro link
 
-//evento para resaltar imagen
-addEventListener('mousemove', (e) => {
-  const x = e.clientX / window.innerWidth;
-  const y = e.clientY / window.innerHeight;
-  document.body.style.setProperty('--mouse-x', x);
-  document.body.style.setProperty('--mouse-y', y);
+// $(document).on("click", ".navbar-collapse.in", function (e) {
+//   if ($(e.target).is("a") && $(e.target).attr("class") != "dropdown-toggle") {
+//     $(this).collapse("hide");
+//   }
+// });
+export const EventoApp = () => {
+const linkesEvent = document.querySelectorAll(".cambiar");
+
+//Eventos
+linkesEvent.addEventListener('click', () => {
+  console.log("click");
 });
+};
 
-
-
-
-
+export default EventoApp;
