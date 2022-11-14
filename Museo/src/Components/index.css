@@ -185,9 +185,11 @@ div.redes {
 } */
 /* ------------------Pagina de Collecciones------- */
 #ImgCollecion > h1 {
+  padding-top: 100px;
+  padding-bottom: 0px;
   font-family: 'Gotham SSm A', 'Gotham SSm B';
   color: #9d9d9d;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 8px;
   text-transform: uppercase;

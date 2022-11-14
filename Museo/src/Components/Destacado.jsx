@@ -1,40 +1,10 @@
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import { cardInfo } from "../assets/Data/data";
+
 
 export const Destacado = () => {
-  const cardInfo = [
-    {
-      image: "src/Images/cartasDes/1.jpg",
-      title: "mgAAA",
-      text: "Probandoooooo",
-    },
-    {
-      image: "src/Images/cartasDes/4.jpg",
-      title: "DOS3",
-      text: "Probandoooooo2222",
-    },
-    {
-      image: "src/Images/cartasDes/4.jpg",
-      title: "DOS3",
-      text: "Probandoooooo2222",
-    },
-    {
-      image: "src/Images/cartasDes/4.jpg",
-      title: "DOS3",
-      text: "Probandoooooo2222",
-    },
-    {
-      image: "src/Images/cartasDes/1.jpg",
-      title: "mgAAA",
-      text: "Probandoooooo",
-    },
-    {
-      image: "src/Images/cartasDes/1.jpg",
-      title: "mgAAA",
-      text: "Probandoooooo",
-    },
-  ];
   const renderCard = (card, index) => {
     return (
       <>
