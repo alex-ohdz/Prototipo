@@ -15,7 +15,7 @@ export const Carrousel = () => {
   
       <Carousel.Item key={index}>
         <img
-          className="d-block w-100 carusel"
+          className="d-block w-100 carusel lazyload"
           src={carusel.image}
           alt=""
         />

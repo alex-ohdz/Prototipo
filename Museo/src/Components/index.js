@@ -14,4 +14,3 @@ linkesEvent.addEventListener('click', () => {
 });
 };
 
-export default EventoApp;

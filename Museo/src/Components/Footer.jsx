@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer>
+    <footer id="footer">
       <div className="col row" id="seccionA">
         <div className="info col-md-6 col-sm-6">
           <h4>Visitanos</h4>
@@ -22,22 +22,22 @@ export const Footer = () => {
         <ul>
           <li>
             <a href="">
-              <i class="bi bi-instagram"></i>
+              <i className="bi bi-instagram"></i>
             </a>
           </li>
           <li>
             <a href="">
-              <i class="bi bi-facebook"></i>
+              <i className="bi bi-facebook"></i>
             </a>
           </li>
           <li>
             <a href="">
-              <i class="bi bi-whatsapp"></i>
+              <i className="bi bi-whatsapp"></i>
             </a>
           </li>
           <li>
             <a href="">
-              <i class="bi bi-youtube"></i>
+              <i className="bi bi-youtube"></i>
             </a>
           </li>
         </ul>

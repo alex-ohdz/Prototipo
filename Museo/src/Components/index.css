@@ -4,14 +4,14 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
-#root > nav{
+#root > nav {
   position: absolute;
-  top:0;
-  left:0;
-  width:100%;
+  top: 0;
+  left: 0;
+  width: 100%;
   align-items: center;
   background-color: rgba(186, 186, 186, 0.717);
-  z-index:1000;
+  z-index: 1000;
   border-bottom: #000000 solid 1px;
 }
 #root > nav > div > a {
@@ -33,7 +33,7 @@ body {
   text-align: center;
   background-color: rgb(255, 255, 255);
 }
-#offcanvasNavbar-expand-md > div.offcanvas-body > div > a{
+#offcanvasNavbar-expand-md > div.offcanvas-body > div > a {
   display: inline-block;
   vertical-align: middle;
   padding-left: 20px;
@@ -42,12 +42,11 @@ body {
   font-weight: 600;
 }
 
-#offcanvasNavbar-expand-md > div.offcanvas-body > div > a:hover{
+#offcanvasNavbar-expand-md > div.offcanvas-body > div > a:hover {
   color: #000000;
   background-color: #ffffff;
   border-radius: 12px;
 }
-
 
 #offcanvasNavbar-expand-md > div.offcanvas-header {
   padding: 0em 1em;
@@ -114,6 +113,11 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 /* --------------------Footer---------------------------*/
+/* pegar footer al final de la pagina */
+#footer{
+  position: relative;
+  bottom: 0;
+}
 
 #seccionA > div.info {
   padding-top: 15px;
@@ -184,7 +188,7 @@ div.redes {
   background-color: #a90101;
 } */
 /* ------------------Pagina de Collecciones------- */
-#ImgCollecion > h1 {
+/* #imgCollecion > h1 {
   padding-top: 100px;
   padding-bottom: 0px;
   font-family: 'Gotham SSm A', 'Gotham SSm B';
@@ -194,8 +198,49 @@ div.redes {
   margin-bottom: 8px;
   text-transform: uppercase;
   line-height: 130%;
+} */
+
+/*--------------------Pagina de Arte------------------------------- */
+.caruselArte {
+  display: block;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
 }
 
+@media (max-width: 768px) {
+  .imgArte {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+  }
+}
 
+@media (min-width: 768px) {
+  .imgArteCuted {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .imgArteCuted {
+    width: 250px;
+    height: 250px;
+  }
+}
 
+@media screen and (min-width: 1200px) {
+  .imgArteCuted {
+    width: 300px;
+    height: 300px;
+  }
+}
 
+@media screen and (min-width: 1400px) {
+  .imgArteCuted {
+    width: 350px;
+    height: 350px;
+  }
+}
+  

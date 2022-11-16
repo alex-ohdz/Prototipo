@@ -51,11 +51,27 @@ export const cardInfo = [
 export const arteInfo = [
   {
     imageSrc: "src/assets/Images/Collecion/Arte/A1.jpg",
+    title: "mgAAA",
+    text: "Probandoooooo",
   },
   {
     imageSrc: "src/assets/Images/Collecion/Arte/A2.jpg",
+    title: "mgAAA",
+    text: "Probandoooooo",
   },
   {
     imageSrc: "src/assets/Images/Collecion/Arte/A3.jpg",
+    title: "mgAAA",
+    text: "Probandoooooo",
+  },
+  {
+    imageSrc: "src/assets/Images/Collecion/Arte/A4.jpg",
+    title: "mgAAA",
+    text: "Probandoooooo",
+  },
+  {
+    imageSrc: "src/assets/Images/Collecion/Arte/A5.jpg",
+    title: "mgAAA",
+    text: "Probandoooooo",
   },
 ];

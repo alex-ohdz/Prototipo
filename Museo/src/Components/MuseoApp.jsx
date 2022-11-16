@@ -15,7 +15,7 @@ export const MuseoApp = () => {
       {/* <Navegador /> */}
       <Carrousel />
       <Destacado />
-      <Footer />
+      {/* <Footer /> */}
       {/* <Eventos /> */}
     </>
   );

@@ -14,7 +14,7 @@ export const Destacado = () => {
             data-aos="zoom-out-up"
             key={index}
           >
-            <Card.Img variant="top" src={card.image} />
+            <Card.Img className="lazyload" variant="top" src={card.image} />
             <Card.Body>
               <Card.Title>{card.title}</Card.Title>
               <Card.Text>{card.text}</Card.Text>
