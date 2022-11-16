@@ -3,12 +3,12 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
-
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 export const Navegador = () => {
   return (
     <>
-      <Navbar key={"md"} expand={"md"}>
+      <Navbar collapseOnSelect key={"md"} expand={"md"}>
         <Container fluid>
           <Link to="/">
             <Navbar.Brand>
@@ -35,28 +35,37 @@ export const Navegador = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav>
-                {/* <Dropdown>
-                  <Dropdown.Toggle variant="success" id="dropdown-basic">
-                    Dropdown Button
-                  </Dropdown.Toggle>
+                <NavDropdown
+                  className="cambiar"
+                  title="Colleccion"
+                  id="nav-dropdown"
+                >
+                  <NavDropdown.Item>
+                    <Link to="/arte" className="cambiar">
+                      Arte
+                    </Link>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item>
+                    <Link to="/fotografia" className="cambiar">
+                      Fotografia
+                    </Link>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item>
+                    <Link to="/documentos" className="cambiar">
+                      Documentos
+                    </Link>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item>
+                    <Link to="/historia" className="cambiar">
+                      Historia
+                    </Link>
+                  </NavDropdown.Item>
+                </NavDropdown>
 
-                  <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">  */}
-                <Link to="/collecion" className="cambiar">
-                  Colecciones
-                </Link>
-                {/* </Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">
-                      Another action
-                    </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">
-                      Something else
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown> */}
                 <Link to="/visita" className="cambiar">
                   Visita
                 </Link>
+
                 <Link to="/eventos" className="cambiar">
                   Eventos
                 </Link>

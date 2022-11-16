@@ -1,11 +1,14 @@
 import { Navegador } from "./Navegador";
 import { Route, Routes } from "react-router-dom";
 import { MuseoApp } from "./MuseoApp";
-import { Colleccion } from "./CollectionPages/Colleccion";
+import { Arte } from "./CollectionPages/Arte";
+import { Fotografia } from "./CollectionPages/Fotografia";
+import { Historia } from "./CollectionPages/Historia";
+import { Documentos } from "./CollectionPages/Documentos";
 import { Eventos } from "./EventosPages/Eventos";
 import { Visita } from "./VisitasPage/Visita";
 import { Footer } from "./Footer";
-import { Fotografia } from "./CollectionPages/Fotografia";
+
 
 export const App = () => {
   return (
@@ -13,8 +16,10 @@ export const App = () => {
       <Navegador />
       <Routes>
         <Route path="/" element={<MuseoApp />} />
-        <Route path="/collecion" element={<Colleccion />} />
+        <Route path="/arte" element={<Arte />} />
         <Route path="/fotografia" element={<Fotografia />} />
+        <Route path="/documentos" element={<Documentos/>} />
+        <Route path="/historia" element={<Historia />} />
         <Route path="/visita" element={<Visita />} />
         <Route path="/eventos" element={<Eventos/>} />
       </Routes>

@@ -27,22 +27,21 @@ body {
   border-radius: 12px;
   border-color: #ffffff;
 }
-#offcanvasNavbar-expand-md {
-  padding: 5px 0px;
-  display: block;
-  text-align: center;
-  background-color: rgb(255, 255, 255);
-}
-#offcanvasNavbar-expand-md > div.offcanvas-body > div > a {
-  display: inline-block;
+#offcanvasNavbar-expand-md > div.offcanvas-body > div > .cambiar {
+  display: flex;
   vertical-align: middle;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 17px;
   font-weight: 600;
+  outline: none;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding-right: 15px;
 }
 
-#offcanvasNavbar-expand-md > div.offcanvas-body > div > a:hover {
+#offcanvasNavbar-expand-md > div.offcanvas-body > div > .cambiar:hover {
   color: #000000;
   background-color: #ffffff;
   border-radius: 12px;
@@ -52,19 +51,13 @@ body {
   padding: 0em 1em;
   background-color: rgb(255, 255, 255);
 }
-#offcanvasNavbar-expand-md > div.offcanvas-body > div > a {
-  outline: none;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  padding-right: 15px;
-}
 .navbar-expand-md .offcanvas .offcanvas-body {
   justify-content: end;
   margin-right: 10px;
   font-size: 18px;
 }
 
-#offcanvasNavbarLabel-expand-md > a {
+#offcanvasNavbarLabel-expand-md > .cambiar{
   overflow: hidden;
   font-family: "Calisto Mt", "Helvetica Now", "Arial", "sans-serif";
   font-weight: 500;
@@ -201,15 +194,16 @@ div.redes {
 } */
 
 /*--------------------Pagina de Arte------------------------------- */
-.caruselArte {
+.caruselAll{
   display: block;
+  
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
 }
 
 @media (max-width: 768px) {
-  .imgArte {
+  .imgAll {
     display: block;
     height: 100%;
     object-fit: cover;
@@ -218,27 +212,27 @@ div.redes {
 }
 
 @media (min-width: 768px) {
-  .imgArteCuted {
+  .imgAllCuted {
     width: 150px;
     height: 150px;
   }
 }
 @media screen and (min-width: 992px) {
-  .imgArteCuted {
+  .imgAllCuted {
     width: 250px;
     height: 250px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .imgArteCuted {
+  .imgAllCuted {
     width: 300px;
     height: 300px;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .imgArteCuted {
+  .imgAllCuted {
     width: 350px;
     height: 350px;
   }

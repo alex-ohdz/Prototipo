@@ -3,7 +3,6 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { cardInfo } from "../assets/Data/data";
 
-
 export const Destacado = () => {
   const renderCard = (card, index) => {
     return (
