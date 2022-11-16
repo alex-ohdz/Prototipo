@@ -74,4 +74,56 @@ export const arteInfo = [
     title: "mgAAA",
     text: "Probandoooooo",
   },
+  {
+    imageSrc: "src/assets/Images/Collecion/Arte/A6.jpg",
+    title: "mgAAA",
+    text: "Probandoooooo",
+  },
+  {
+    imageSrc: "src/assets/Images/Collecion/Arte/A7.jpg",
+    title: "mgAAA",
+    text: "Probandoooooo",
+  },
+  {
+    imageSrc: "src/assets/Images/Collecion/Arte/A16.jpg",
+    title: "mgAAA",
+    text: "Probandoooooo",
+  },
+  {
+    imageSrc: "src/assets/Images/Collecion/Arte/A17.jpg",
+    title: "mgAAA",
+    text: "Probandoooooo",
+    
+  },
+  {
+    imageSrc: "src/assets/Images/Collecion/Arte/B1.jpg",
+    title: "mgAAA",
+    text: "Probandoooooo",
+    
+  },
+  {
+    imageSrc: "src/assets/Images/Collecion/Arte/B2.jpg",
+    title: "mgAAA",
+    text: "Probandoooooo",
+    
+  },
+  {
+    imageSrc: "src/assets/Images/Collecion/Arte/B3.jpg",
+    title: "mgAAA",
+    text: "Probandoooooo",
+    
+  },
+  {
+    imageSrc: "src/assets/Images/Collecion/Arte/B4.jpg",
+    title: "mgAAA",
+    text: "Probandoooooo",
+    
+  },
+  {
+    imageSrc: "src/assets/Images/Collecion/Arte/B5.jpg",
+    title: "mgAAA",
+    text: "Probandoooooo",
+    
+  },
 ];
+

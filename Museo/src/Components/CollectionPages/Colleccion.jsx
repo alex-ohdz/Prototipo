@@ -2,15 +2,19 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import { arteInfo } from "../../assets/Data/data";
 
-
 export const Colleccion = () => {
-
-  const RenderImg = ({img, index, cuted}) => {
+  const RenderImg = ({ img, index, cuted }) => {
     return (
-      <div style={{display:"flex", alignItems:"center", justifyContent: "center"}}>
-        
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          className: "imgAll",
+        }}
+      >
         <img
-          className={`img-fluid imgAlllazyload ${cuted ? "imgAllCuted" : ""}`}
+          className={`img-fluid lazyload ${cuted ? "imgAllCuted" : ""}`}
           key={index}
           src={img.imageSrc}
           alt=""
@@ -37,13 +41,44 @@ export const Colleccion = () => {
       <Slider
         asNavFor={nav1}
         ref={(slider2) => setNav2(slider2)}
-        slidesToShow={3}
+        responsive={[
+          {
+            breakpoint: 3000,
+            settings: {
+              slidesToShow: 12,
+            },
+          },
+          {
+            breakpoint: 2000,
+            settings: {
+              slidesToShow: 11,
+            },
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 5,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 4,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+        ]}
         touchMove={true}
-        adaptiveHeight={false}
+        lazyLoad="ondemand"
         centerMode={true}
         swipeToSlide={true}
         focusOnSelect={true}
-        className="container secondtSlider"
+        className="secondSlider"
       >
         {arteInfo.map((data, index) => (
           <RenderImg img={data} cuted={true} key={index} />
@@ -52,5 +87,3 @@ export const Colleccion = () => {
     </div>
   );
 };
-
-
