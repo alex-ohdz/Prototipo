@@ -1,7 +1,5 @@
-
+import { Colleccion } from "./Colleccion";
 
 export const Documentos = () => {
-  return (
-	<div>Documentos</div>
-  )
-}
+  return <Colleccion />;
+};

@@ -5,16 +5,11 @@ import { arteInfo } from "../../assets/Data/data";
 export const Colleccion = () => {
   const RenderImg = ({ img, index, cuted }) => {
     return (
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          className: "imgAll",
-        }}
-      >
+      <div className="imgAll">
         <img
-          className={`img-fluid lazyload ${cuted ? "imgAllCuted" : ""}`}
+          className={`img-fluid lazyload ${
+            cuted ? "imgAllCuted" : ""
+          }`}
           key={index}
           src={img.imageSrc}
           alt=""
@@ -27,7 +22,6 @@ export const Colleccion = () => {
 
   return (
     <div className="caruselAll">
-      <h2>Arte</h2>
       <Slider
         asNavFor={nav2}
         lazyLoad="ondemand"
@@ -51,25 +45,13 @@ export const Colleccion = () => {
           {
             breakpoint: 2000,
             settings: {
-              slidesToShow: 11,
+              slidesToShow: 9,
             },
           },
           {
             breakpoint: 1024,
             settings: {
               slidesToShow: 5,
-            },
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 4,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 3,
             },
           },
         ]}

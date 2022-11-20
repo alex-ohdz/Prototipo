@@ -1,8 +1,12 @@
-import { Colleccion } from "./Colleccion";
+import { ImageSlider } from "./ImageSlider";
+import { SliderData } from "../../assets/Data/SliderData";
+// import { Accordion } from "./Accordion";
+
 export const Arte = () => {
   return (
-    <div id="imgCollecion">
-      <Colleccion />
-    </div>
+    <>
+      <ImageSlider slides={SliderData} />
+      {/* <Accordion /> */}
+    </>
   );
 };

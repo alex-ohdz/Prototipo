@@ -57,7 +57,7 @@ body {
   font-size: 18px;
 }
 
-#offcanvasNavbarLabel-expand-md > .cambiar{
+#offcanvasNavbarLabel-expand-md > .cambiar {
   overflow: hidden;
   font-family: "Calisto Mt", "Helvetica Now", "Arial", "sans-serif";
   font-weight: 500;
@@ -76,8 +76,49 @@ body {
 #offcanvasNavbarLabel-expand-md > a > img {
   width: 35px;
 }
+/* -----------------Component Two Carousel -------------------------------- */
 
 /* --------------Zona Carrusel------------------------------ */
+.caruselH {
+  width: auto;
+  height: 350px;
+}
+@media screen and (min-width: 500px) {
+  .caruselH {
+    width: auto;
+    height: 450px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .caruselH {
+    width: auto;
+    height: 550px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .caruselH {
+    width: auto;
+    height: 700px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .caruselH {
+    width: auto;
+    height: 800px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .caruselH {
+    width: auto;
+    height: 900px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .caruselH {
+    width: auto;
+    height: 1100px;
+  }
+}
 
 /* --------------Zona Cards------------------------------ */
 #destacado > div > div > div.cartas {
@@ -107,9 +148,11 @@ body {
 }
 /* --------------------Footer---------------------------*/
 /* pegar footer al final de la pagina */
-#footer{
+#footer {
   position: relative;
   bottom: 0;
+
+  margin-top: 0px;
 }
 
 #seccionA > div.info {
@@ -181,73 +224,199 @@ div.redes {
   background-color: #a90101;
 } */
 /* ------------------Pagina de Collecciones------- */
-/* #imgCollecion > h1 {
-  padding-top: 100px;
-  padding-bottom: 0px;
-  font-family: 'Gotham SSm A', 'Gotham SSm B';
-  color: #9d9d9d;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  line-height: 130%;
+/* div.caruselAll{
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 100px;
+  margin-top: 100px;
+  border: #000000 solid 1px;
 } */
 
+
 /*--------------------Pagina de Arte------------------------------- */
-.caruselAll{
-  display: block;
-  
-  padding-top: 100px;
-  padding-bottom: 100px;
-  text-align: center;
-}
-#imgCollecion > div > div.slick-slider.firstSlider.slick-initialized > div > div > div.slick-slide.slick-active.slick-current > div > div > img{
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: auto;
-  width: auto;
-  max-height: 50vh;
-  max-width: 100%;
-  background-color: #603535;
-}
- /* .firstSlider{
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: auto;
-  width: auto;
-  max-height: 80vh;
-  max-width: 100%;
-  background-color: #603535;
- } */
-.secondSlider{
+
+.slider {
   position: relative;
-  display: block;
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 100vw;
-  height: 14vh;
+  margin-top: 30px;
+  height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #603535;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+  background-color:#311c1c;
+
+}
+.image {
+  width: auto;
+  height: 100%;
+}
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  z-index: 10;
+  user-select: none;
+}
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  z-index: 10;
+  user-select: none;
+}
+#imgTooltip{
+ font-size: 16px;
+ padding: 0px 10px;
+}
+@media screen and (max-width: 1070px) {
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: rgb(120, 120, 120);
+    z-index: 10;
+    user-select: none;
+  }
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: rgb(120, 120, 120);
+    z-index: 10;
+    user-select: none;
+  }
+}
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+}
+.linea {
+  font-family: "Hoefler Text A", "Hoefler Text B";
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  color: #000000;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2O8c+fOfwAIxQOV1xQ4/QAAAABJRU5ErkJggg==)
+    repeat-x 0 center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+h2.linea span {
+  background: #fff;
+  padding: 0 15px;
+}
+/* ------------------componente de caruseles----------------------- */
+.caruselAll {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #311c1c;
+}
+.imgAll {
+  height: 100%;
+  width: auto;
+  margin-left: 10%;
+  margin-right: 10%;
   object-fit: cover;
 }
-.imgAllCuted{
-  width: 100%;
+.firstSlider {
+  position: relative;
+  padding-top: 55px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+}
+.slick-slider.secondSlider.slick-initialized > div > div {
+  height: 60px;
+  width: 600px;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+.secondSlider {
+  display: none;
+}
+.caruselAll {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #311c1c;
+}
+}
+button.slick-arrow.slick-prev {
+  left: 20px;
+  z-index: 1;
+}
+button.slick-arrow.slick-next {
+  right: 20px;
+  z-index: 1;
+}
+@media screen and (min-width: 1070px) {
+.caruselAll {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #311c1c;
+}
+.imgAll {
   height: 100%;
-  max-height: 120px;
-  max-width: 100px;
+  width: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  object-fit: cover;
 }
- 
-/* ---------carusel de colleciones---------------- */
-.sizeCarusel{
- padding-top: 150px;
- padding-bottom: 150px;
+.firstSlider {
+  position: relative;
+  padding-top: 55px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 500px;
 }
-.caruselCol{
-  width:auto; height:450px
+.slick-slider.secondSlider.slick-initialized > div > div {
+  height: 60px;
+  width: 600px;
+  object-fit: cover;
+}
+.secondSlider {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 12vh;
+  justify-content: center;
+  background-color: #1a0b0b;
+}
+button.slick-arrow.slick-prev {
+  left: 20px;
+  z-index: 1;
+}
+button.slick-arrow.slick-next {
+  right: 20px;
+  z-index: 1;
+}
 }

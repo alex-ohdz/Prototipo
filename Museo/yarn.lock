@@ -408,6 +408,11 @@ bootstrap-icons@^1.9.1:
   resolved "https://registry.yarnpkg.com/bootstrap-icons/-/bootstrap-icons-1.9.1.tgz#cf22d91a25447645e45c49ebde4e56eafdfe761b"
   integrity sha512-d4ZkO30MIkAhQ2nNRJqKXJVEQorALGbLWTuRxyCTJF96lRIV6imcgMehWGJUiJMJhglN0o2tqLIeDnMdiQEE9g==
 
+bootstrap-slider@^11.0.2:
+  version "11.0.2"
+  resolved "https://registry.yarnpkg.com/bootstrap-slider/-/bootstrap-slider-11.0.2.tgz#4b167c165f322339cc66f0c7166b5a39e289e251"
+  integrity sha512-CdwS+Z6X79OkLes9RfDgPB9UIY/+81wTkm6ktdSB6hdyiRbjJLFQIjZdnEr55tDyXZfgC7U6yeSXkNN9ZdGqjA==
+
 bootstrap@^5.2.2:
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.2.2.tgz#834e053eed584a65e244d8aa112a6959f56e27a0"
@@ -790,6 +795,13 @@ prop-types@^15.6.2, prop-types@^15.8.1:
     object-assign "^4.1.1"
     react-is "^16.13.1"
 
+react-bootstrap-slider@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-bootstrap-slider/-/react-bootstrap-slider-3.0.0.tgz#f47bc448ad1c6095e9cd59278150291204c60dbb"
+  integrity sha512-Sl5g/J1KW/byU+4Io/W/CUNxxWZahNs8uQcAgE+27XQJ4njfSFZQ3NYY55vy1aFeoU8Kkmnrq+CG5gix6L8Kvw==
+  dependencies:
+    bootstrap-slider "^11.0.2"
+
 react-bootstrap@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-2.5.0.tgz#e25e649e37f080d38eeb92ad5b4ed562a1d7de62"
@@ -815,6 +827,11 @@ react-dom@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-icons@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.6.0.tgz#f83eda179af5d02c047449a20b702c858653d397"
+  integrity sha512-rR/L9m9340yO8yv1QT1QurxWQvWpbNHqVX0fzMln2HEb9TEIrQRGsqiNFQfiv9/JEUbyHmHPlNTB2LWm2Ttz0g==
 
 react-is@^16.13.1, react-is@^16.3.2:
   version "16.13.1"

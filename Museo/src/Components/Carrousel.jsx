@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import { caruselInfo } from "../assets/Data/data";
+import { arteInfo } from "../assets/Data/data";
 
 export const Carrousel = () => {
   const [index, setIndex] = useState(0);
@@ -13,8 +13,8 @@ export const Carrousel = () => {
     return (
       <Carousel.Item key={index}>
         <img
-          className="d-block w-100 carusel lazyload"
-          src={carusel.image}
+          className="d-block w-100 caruselH lazyload"
+          src={carusel.imageSrc}
           alt=""
         />
         <Carousel.Caption>
@@ -26,8 +26,8 @@ export const Carrousel = () => {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-      {caruselInfo.map(renderCarusel)}
+    <Carousel className="caruselHome" activeIndex={index} onSelect={handleSelect}>
+      {arteInfo.map(renderCarusel)}
     </Carousel>
   );
 };
