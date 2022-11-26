@@ -1,12 +1,12 @@
 import { ImageSlider } from "./ImageSlider";
 import { SliderData } from "../../assets/Data/SliderData";
-// import { Accordion } from "./Accordion";
+import { ApiRest } from "./PartComponents/ApiRest";
 
 export const Arte = () => {
   return (
     <>
       <ImageSlider slides={SliderData} />
-      {/* <Accordion /> */}
+      <ApiRest />
     </>
   );
 };

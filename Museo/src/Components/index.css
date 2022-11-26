@@ -250,7 +250,7 @@ div.redes {
   width: auto;
   height: 100%;
 }
-.right-arrow {
+/* .right-arrow {
   position: absolute;
   top: 50%;
   right: 32px;
@@ -269,12 +269,12 @@ div.redes {
   color: rgb(0, 0, 0);
   z-index: 10;
   user-select: none;
-}
+} */
 #imgTooltip{
  font-size: 16px;
  padding: 0px 10px;
 }
-@media screen and (max-width: 1070px) {
+
   .right-arrow {
     position: absolute;
     top: 50%;
@@ -295,7 +295,7 @@ div.redes {
     z-index: 10;
     user-select: none;
   }
-}
+
 .slide {
   opacity: 0;
   transition-duration: 1s ease;

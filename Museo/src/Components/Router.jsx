@@ -9,7 +9,7 @@ import { Eventos } from "./EventosPages/Eventos";
 import { Visita } from "./VisitasPage/Visita";
 import { Footer } from "./Footer";
 
-export const App = () => {
+export const Router = () => {
   return (
     <>
       
