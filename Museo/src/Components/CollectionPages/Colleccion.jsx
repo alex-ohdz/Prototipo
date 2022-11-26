@@ -2,23 +2,21 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import { arteInfo } from "../../assets/Data/data";
 
-const RenderImg = ({ img, index, cuted }) => {
-  return (
-    <div className="imgAll">
-      <img
-        className={`img-fluid lazyload ${
-          cuted ? "imgAllCuted" : ""
-        }`}
-        key={index}
-        src={img.imageSrc}
-        alt=""
-      />
-    </div>
-  );
-};
-
 export const Colleccion = () => {
- 
+  const RenderImg = ({ img, index, cuted }) => {
+    return (
+      <div className="imgAll">
+        <img
+          className={`img-fluid lazyload ${
+            cuted ? "imgAllCuted" : ""
+          }`}
+          key={index}
+          src={img.imageSrc}
+          alt=""
+        />
+      </div>
+    );
+  };
   const [nav1, setNav1] = useState();
   const [nav2, setNav2] = useState();
 
