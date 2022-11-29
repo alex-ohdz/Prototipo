@@ -34,9 +34,9 @@ export const Navegador = () => {
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              <Nav>
+              <Nav className="cabecera container-fluid">
                 <NavDropdown
-                  className="cambiar"
+                  className="cambiar Headers"
                   title="Colleccion"
                   id="nav-dropdown"
                 >
@@ -62,11 +62,11 @@ export const Navegador = () => {
                   </NavDropdown.Item>
                 </NavDropdown>
 
-                <Link to="/visita" className="cambiar">
+                <Link to="/visita" className="cambiar Headers">
                   Visita
                 </Link>
 
-                <Link to="/eventos" className="cambiar">
+                <Link to="/eventos" className="cambiar Headers">
                   Eventos
                 </Link>
               </Nav>

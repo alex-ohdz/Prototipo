@@ -1,15 +1,27 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import { AccordionSlider } from "./Accordion";
 import { RenderTooltip } from "./PartComponents/RenderTooltip";
-import { SliderData } from "../../assets/Data/SliderData";
+import { FetchApi } from "./PartComponents/FetchApi";
 
+export const ImageSlider = () => {
 
-export const ImageSlider = ({ slides }) => {
+  const [picture, setPicture] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch("https://rickandmortyapi.com/api/character");
+      const data = await response.json();
+      setPicture(data.results);
+    };
+
+    fetchData();
+    
+  }, []);
 
   const [current, setCurrent] = useState(0);
-  const length = slides.length;
+  const length = picture.length;
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
@@ -17,7 +29,7 @@ export const ImageSlider = ({ slides }) => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
-  if (!Array.isArray(slides) || slides.length <= 0) {
+  if (!Array.isArray(picture) || picture.length <= 0) {
     return null;
   }
 
@@ -29,27 +41,27 @@ export const ImageSlider = ({ slides }) => {
       <section className="slider">
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
         <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-        {SliderData.map((slide, index) => {
+        {picture.map((picture, index) => {
           return (
             <OverlayTrigger
-              key={index}
+              key={picture.id}
               placement="bottom"
               delay={{ show: 200, hide: 400 }}
-              overlay={(props) => RenderTooltip({ slide, ...props })}
+              overlay={<RenderTooltip picture={picture[current]} />}
             >
               <div
                 className={index === current ? "slide active" : "slide"}
-                key={index}
+                key={picture.id}
               >
                 {index === current && (
-                  <img src={slide.image} alt="travel image" className="image" />
+                  <img src={picture.image} alt="travel image" className="image" />
                 )}
               </div>
             </OverlayTrigger>
           );
         })}
       </section>
-      <AccordionSlider slide={slides[current]} />
+      <AccordionSlider picture={picture[current]} />
     </>
   );
 };

@@ -1,8 +1,9 @@
 import Tooltip from "react-bootstrap/Tooltip";
-export const RenderTooltip = (props) => {
+export const RenderTooltip = ({picture}) => {
 	return (
-	<Tooltip id="imgTooltip" {...props}>
-	  <span><em>{props.slide.title}</em>, {props.slide.autor}</span>
+	<Tooltip id="imgTooltip">
+	  <span><em>{picture.name}</em>,probando {picture.status}</span>
 	</Tooltip>
 	)
   };
+  //

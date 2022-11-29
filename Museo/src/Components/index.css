@@ -27,8 +27,7 @@ body {
   border-radius: 12px;
   border-color: #ffffff;
 }
-#offcanvasNavbar-expand-md > div.offcanvas-body > div > .cambiar {
-  display: flex;
+.cambiar {
   vertical-align: middle;
   padding-left: 20px;
   padding-right: 20px;
@@ -40,6 +39,17 @@ body {
   color: rgb(0, 0, 0);
   padding-right: 15px;
 }
+.Headers{
+  display: flex;
+}
+.cabecera{
+  display:flex;
+}
+#offcanvasNavbar-expand-md > div.offcanvas-body > div > div > div{
+  padding: 10px;
+}
+
+
 
 #offcanvasNavbar-expand-md > div.offcanvas-body > div > .cambiar:hover {
   color: #000000;

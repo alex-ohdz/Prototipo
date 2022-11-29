@@ -1,12 +1,12 @@
 import Accordion from 'react-bootstrap/Accordion';
 
-export const AccordionSlider = (props) => {
+export const AccordionSlider = ({picture}) => {
   return (
     <Accordion defaultActiveKey="0" flush>
       <Accordion.Item eventKey="0">
         <Accordion.Header>Descripción</Accordion.Header>
         <Accordion.Body>
-         {props.slide.description}
+         {picture.location.name}
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
