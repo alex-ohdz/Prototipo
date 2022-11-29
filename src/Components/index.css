@@ -39,15 +39,17 @@ body {
   color: rgb(0, 0, 0);
   padding-right: 15px;
 }
-.Headers{
-  display: flex;
+  #offcanvasNavbar-expand-md > div.offcanvas-body > div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: baseline;
 }
-.cabecera{
-  display:flex;
+.navbar-nav .dropdown-menu {
+  /* position: static; */
+  background-color: antiquewhite;
 }
-#offcanvasNavbar-expand-md > div.offcanvas-body > div > div > div{
-  padding: 10px;
-}
+
 
 
 
