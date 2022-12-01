@@ -39,19 +39,30 @@ body {
   color: rgb(0, 0, 0);
   padding-right: 15px;
 }
+#offcanvasNavbar-expand-md > div.offcanvas-body > div {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: end;
+}
+@media screen and (max-width: 768px) {
   #offcanvasNavbar-expand-md > div.offcanvas-body > div {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    justify-content: space-evenly;
     align-items: baseline;
+    flex-direction: row;
+    margin-top: 3px;
+  }
+}
+
+#offcanvasNavbar-expand-md {
+  background-color: rgba(186, 186, 186, 0.717);
 }
 .navbar-nav .dropdown-menu {
-  /* position: static; */
+  position: absolute;
   background-color: antiquewhite;
 }
-
-
-
 
 #offcanvasNavbar-expand-md > div.offcanvas-body > div > .cambiar:hover {
   color: #000000;
@@ -93,7 +104,7 @@ body {
 /* --------------Zona Carrusel------------------------------ */
 .caruselH {
   width: auto;
-  height: 350px;
+  height: 340px;
 }
 @media screen and (min-width: 500px) {
   .caruselH {
@@ -214,6 +225,10 @@ div.redes {
   text-decoration: none;
   /* transition: 0.2s; */
 }
+.mapaM {
+  height: 120px;
+  width: 150px;
+}
 /* .redes ul:hover a {
   filter: blur(2px);
 }
@@ -245,7 +260,6 @@ div.redes {
   border: #000000 solid 1px;
 } */
 
-
 /*--------------------Pagina de Arte------------------------------- */
 
 .slider {
@@ -255,8 +269,7 @@ div.redes {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#311c1c;
-
+  background-color: #311c1c;
 }
 .image {
   width: auto;
@@ -282,36 +295,35 @@ div.redes {
   z-index: 10;
   user-select: none;
 } */
-#imgTooltip{
- font-size: 16px;
- padding: 0px 10px;
+#imgTooltip {
+  font-size: 16px;
+  padding: 0px 10px;
 }
 
-  .right-arrow {
-    position: absolute;
-    top: 50%;
-    right: 32px;
-    font-size: 2.5rem;
-    cursor: pointer;
-    color: rgb(120, 120, 120);
-    z-index: 10;
-    user-select: none;
-  }
-  .left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    font-size: 2.5rem;
-    cursor: pointer;
-    color: rgb(120, 120, 120);
-    z-index: 10;
-    user-select: none;
-  }
-
-.slide {
-  opacity: 0;
-  transition-duration: 1s ease;
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: rgb(120, 120, 120);
+  z-index: 10;
+  user-select: none;
 }
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: rgb(120, 120, 120);
+  z-index: 10;
+  user-select: none;
+}
+/* .slideX{ */
+/* transition */
+/* } */
+
 .slide.active {
   opacity: 1;
   transition-duration: 1s;
@@ -364,18 +376,18 @@ h2.linea span {
   object-fit: cover;
 }
 @media screen and (max-width: 768px) {
-.secondSlider {
-  display: none;
-}
-.caruselAll {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  height: 500px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #311c1c;
-}
+  .secondSlider {
+    display: none;
+  }
+  .caruselAll {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #311c1c;
+  }
 }
 button.slick-arrow.slick-prev {
   left: 20px;
@@ -386,49 +398,64 @@ button.slick-arrow.slick-next {
   z-index: 1;
 }
 @media screen and (min-width: 1070px) {
-.caruselAll {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  height: 600px;
+  .caruselAll {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #311c1c;
+  }
+
+  .imgAll {
+    height: 100%;
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    object-fit: cover;
+  }
+  .firstSlider {
+    position: relative;
+    padding-top: 55px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+  }
+  .slick-slider.secondSlider.slick-initialized > div > div {
+    height: 60px;
+    width: 600px;
+    object-fit: cover;
+  }
+  .secondSlider {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 12vh;
+    justify-content: center;
+    background-color: #1a0b0b;
+  }
+  button.slick-arrow.slick-prev {
+    left: 20px;
+    z-index: 1;
+  }
+  button.slick-arrow.slick-next {
+    right: 20px;
+    z-index: 1;
+  }
+}
+
+h5.titleSlider {
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 50px;
+  padding: 5px;
+  color: #fff;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  background-color: #311c1c;
-}
-.imgAll {
-  height: 100%;
-  width: auto;
-  margin-left: 10%;
-  margin-right: 10%;
-  object-fit: cover;
-}
-.firstSlider {
-  position: relative;
-  padding-top: 55px;
-  margin-bottom: 10px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 500px;
-}
-.slick-slider.secondSlider.slick-initialized > div > div {
-  height: 60px;
-  width: 600px;
-  object-fit: cover;
-}
-.secondSlider {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: 12vh;
-  justify-content: center;
-  background-color: #1a0b0b;
-}
-button.slick-arrow.slick-prev {
-  left: 20px;
-  z-index: 1;
-}
-button.slick-arrow.slick-next {
-  right: 20px;
-  z-index: 1;
-}
+  font-size: 25px;
+  font-family: "Hoefler Text A", "Hoefler Text B";
+  background-color: #00000099;
 }

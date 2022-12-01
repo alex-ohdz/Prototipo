@@ -1,12 +1,8 @@
 import { useEffect, useState } from "react";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import { AccordionSlider } from "./Accordion";
-import { RenderTooltip } from "./PartComponents/RenderTooltip";
-import { FetchApi } from "./PartComponents/FetchApi";
 
 export const ImageSlider = () => {
-
   const [picture, setPicture] = useState([]);
 
   useEffect(() => {
@@ -17,7 +13,6 @@ export const ImageSlider = () => {
     };
 
     fetchData();
-    
   }, []);
 
   const [current, setCurrent] = useState(0);
@@ -43,24 +38,19 @@ export const ImageSlider = () => {
         <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
         {picture.map((picture, index) => {
           return (
-            <OverlayTrigger
+            <div
+              className={index === current ? "slideX active" : "slideX"}
               key={picture.id}
-              placement="bottom"
-              delay={{ show: 200, hide: 400 }}
-              overlay={<RenderTooltip picture={picture[current]} />}
             >
-              <div
-                className={index === current ? "slide active" : "slide"}
-                key={picture.id}
-              >
-                {index === current && (
-                  <img src={picture.image} alt="travel image" className="image" />
-                )}
-              </div>
-            </OverlayTrigger>
+              {index === current && (
+                <img src={picture.image} alt="travel image" className="image" />
+              )}
+            </div>
           );
         })}
+        <h5 className="titleSlider"><span><em>{picture[current].name}</em>, {picture[current].species}</span></h5>
       </section>
+
       <AccordionSlider picture={picture[current]} />
     </>
   );

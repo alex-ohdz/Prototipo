@@ -1,4 +1,4 @@
-import { ImageSlider } from "./ImageSlider";
+import { ImageSlider } from "./PartComponents/ImageSlider";
 
 export const Arte = () => {
   return (
