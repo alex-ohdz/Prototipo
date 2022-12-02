@@ -228,6 +228,8 @@ div.redes {
 .mapaM {
   height: 120px;
   width: 150px;
+  border: #ffffff solid 1.8px;
+  margin-bottom: 20px;
 }
 /* .redes ul:hover a {
   filter: blur(2px);
@@ -458,4 +460,47 @@ h5.titleSlider {
   font-size: 25px;
   font-family: "Hoefler Text A", "Hoefler Text B";
   background-color: #00000099;
+}
+/* ----------------Pagina de Eventos----------------------- */
+
+.hGallery {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #b5b5b5;
+}
+.contSup {
+  background-color: #b5b5b5;
+  padding-bottom: 20px;
+}
+.gallery-cont {
+  background-color: #ffffff;
+  width: auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  box-shadow: #000000 0px 1px 3px 0px;
+}
+.gallery-img {
+  max-height: 100vh;
+  height: 100%;
+  width: auto;
+}
+.menuDown {
+  display: flex;
+  align-items: baseline;
+  border-top: #dfdfdf solid 1px;
+  border-bottom: #dfdfdf solid 1px;
+  text-align: justify;
+  padding-left: 25px;
+  vertical-align: middle;
+}
+.bi-star {
+  color: #dbdb0e;
+  font-size: 30px;
+}
+.bStar {
+  border: none;
+  background-color: #ffffff;
+  vertical-align: middle;
 }
