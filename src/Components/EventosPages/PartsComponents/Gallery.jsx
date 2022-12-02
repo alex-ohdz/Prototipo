@@ -18,7 +18,7 @@ export const Gallery = () => {
               </div>
               <div className="contadorButton">
                 <button className="bStar">
-                  <i class="bi bi-star"></i>
+                  <i className="bi bi-star"></i>
                 </button>
               </div>
             </div>

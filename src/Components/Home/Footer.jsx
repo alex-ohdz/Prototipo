@@ -1,7 +1,6 @@
-import { Redes } from "./MainParts/Redes";
-import { Horarios } from "./MainParts/Horarios";
-import { Localizacion } from "./MainParts/Localizacion";
-import { Mapa } from './MainParts/Mapa'
+import { Redes } from "./HomeParts/Redes";
+import { Horarios } from "./HomeParts/Horarios";
+import { Localizacion } from "./HomeParts/Localizacion";
 export const Footer = () => {
   return (
     <footer id="footer">

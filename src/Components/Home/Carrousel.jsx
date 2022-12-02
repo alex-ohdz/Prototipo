@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import { arteInfo } from "../assets/Data/data";
+import { arteInfo } from "../../assets/Data/data";
 
 export const Carrousel = () => {
   const [index, setIndex] = useState(0);
