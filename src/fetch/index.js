@@ -1,3 +1,3 @@
-module.export = {
-	firebase: requries('../services/firebase')
+module.exports = {
+	cardsManager: require('./firebase/controllers/cards')
 }
