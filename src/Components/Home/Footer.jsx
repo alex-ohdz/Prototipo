@@ -8,6 +8,9 @@ export const Footer = () => {
         <Localizacion />
         <Horarios />
       </div>
+      <div className="derechos">
+        <p className="derechosP">Copyright © 2022. Museo de Arte Popular. Todos los derechos reservados</p>
+      </div>
       <Redes />
     </footer>
   );

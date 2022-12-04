@@ -1,7 +1,8 @@
 import React from "react";
 import { SliderData } from "../../../assets/Data/SliderData";
+import { StarsButton } from "./GalleryParts";
 
-export const Gallery = () => {
+export const Gallery = ({ value }) => {
   const renderGallery = (gallery, index) => {
     return (
       <>
@@ -13,14 +14,7 @@ export const Gallery = () => {
               alt={gallery.alt}
             />
             <div className="menuDown">
-              <div className="contadorStar">
-              <p>4</p>
-              </div>
-              <div className="contadorButton">
-                <button className="bStar">
-                  <i className="bi bi-star"></i>
-                </button>
-              </div>
+             <StarsButton/>
             </div>
           </div>
         </div>
@@ -29,7 +23,7 @@ export const Gallery = () => {
   };
   return (
     <>
-      <h1 className="hGallery">Galería</h1>
+     <h1 className="hGallery">{ value }</h1>
       <div className="gallery-container">{SliderData.map(renderGallery)}</div>
     </>
   );
