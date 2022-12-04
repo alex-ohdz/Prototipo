@@ -1,5 +1,5 @@
-import { Colleccion } from "./PartComponents/Colleccion";
+import { ImageSlider } from "./PartComponents/ImageSlider";
 
 export const Documentos = () => {
-  return <Colleccion />;
+  return <ImageSlider value="Documentos"/>;
 };

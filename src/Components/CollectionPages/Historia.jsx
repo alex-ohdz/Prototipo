@@ -1,6 +1,5 @@
+import { ImageSlider } from "./PartComponents/ImageSlider";
 
 export const Historia = () => {
-  return (
-	<div>Historia</div>
-  )
-}
+  return <ImageSlider value="Historia"/>;
+};

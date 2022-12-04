@@ -3,7 +3,7 @@ import { ImageSlider } from "./PartComponents/ImageSlider";
 export const Arte = () => {
   return (
     <>
-      <ImageSlider />
+      <ImageSlider value="Arte" />
     </>
   );
 };
