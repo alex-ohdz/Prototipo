@@ -29,15 +29,17 @@ body {
 }
 .cambiar {
   vertical-align: middle;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 17px;
   font-weight: 600;
   outline: none;
   align-items: center;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  padding-right: 15px;
+}
+.offcanvas-body {
+  overflow-y: visible;
 }
 #offcanvasNavbar-expand-md > div.offcanvas-body > div {
   display: flex;
@@ -72,7 +74,7 @@ body {
 
 #offcanvasNavbar-expand-md > div.offcanvas-header {
   padding: 0em 1em;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(169, 169, 169);
 }
 .navbar-expand-md .offcanvas .offcanvas-body {
   justify-content: end;
@@ -121,13 +123,13 @@ body {
 @media screen and (min-width: 800px) {
   .caruselH {
     width: auto;
-    height: 700px;
+    height: 610px;
   }
 }
 @media screen and (min-width: 1000px) {
   .caruselH {
     width: auto;
-    height: 800px;
+    height: 650px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -139,7 +141,7 @@ body {
 @media screen and (min-width: 1440px) {
   .caruselH {
     width: auto;
-    height: 1100px;
+    height: 800px;
   }
 }
 
@@ -186,21 +188,41 @@ body {
   font-size: 16px;
 }
 .derechos {
+  justify-content: space-around;
+  display: flex;
+  background-color: #000000;
+  flex-direction: row;
+  align-items: baseline;
+}
+@media screen and (max-width: 560px) {
+.derechos {
   justify-content: center;
   display: flex;
   align-items: center;
-  background-color: #565656;
+  flex-direction: column;
+  background-color: #000000;
 }
-.derechosP{
-  
+}
+.derechosP1 {
   color: #ffffff;
-  padding: 5px 0px 0px ;
+  padding: 5px 0px 0px;
+}
+.derechosP2 {
+  padding-top: 0px;
+  margin-top: 0px;
+  color: #ffffff;
 }
 
 #seccionA > div.info {
   padding-top: 15px;
-  padding-left: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-between;
 }
 #root > footer > div#seccionA > div.info > hr {
   width: 98%;
@@ -210,7 +232,8 @@ body {
 }
 #seccionA > div.horario {
   padding-top: 15px;
-  padding-left: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: rgb(187, 167, 107);
 }
 #seccionA > div.horario > hr {
@@ -222,46 +245,51 @@ body {
 
 div.redes {
   display: flex;
-  align-items: flex-end;
-  justify-content: end;
+  align-items: center;
+  justify-content: flex-end;
+}
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .redes ul li {
   display: inline-block;
-  margin: 0 5px;
-  height: 40px;
+  margin: 0 3px;
+  height: 0px;
   width: 40px;
   text-align: center;
 }
+
 .redes ul li a {
-  margin-top: 15px;
-  /* padding: 0 10px; */
-  /* border: #000000 solid 1px;
-  border-radius: 25px 25px 25px 25px; */
+  padding: 3px 6px;
+  border: #aaaaaa solid 1px;
+  border-radius: 10px 10px 10px 10px;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   line-height: 50px;
   font-size: 20px;
   text-decoration: none;
-  /* transition: 0.2s; */
+  transition: 0.2s;
 }
 .mapaM {
-  height: 120px;
-  width: 150px;
+  height: 70px;
+  width: 90px;
   border: #ffffff solid 1.8px;
   margin-bottom: 20px;
 }
 /* .redes ul:hover a {
   filter: blur(2px);
-}
-.redes ul li a:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
-  filter: none;
 } */
 
+.redes ul li a:hover {
+  /* transform: translateY(-3px) scale(1.10); */
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+}
 /* #root > footer > div > ul > li:nth-child(1) > a:hover {
   background-color: rgb(228, 97, 61);
-}
+} */
+/*
 #root > footer > div > ul > li:nth-child(2) > a:hover {
   background-color: #1a0dab;
 }
@@ -271,16 +299,6 @@ div.redes {
 #root > footer > div > ul > li:nth-child(4) > a:hover {
   background-color: #a90101;
 } */
-/* ------------------Pagina de Collecciones------- */
-/* div.caruselAll{
-  text-align: center;
-  justify-content: center;
-  justify-items: center;
-  margin-top: 100px;
-  margin-top: 100px;
-  border: #000000 solid 1px;
-} */
-
 /*--------------------Pagina de Arte------------------------------- */
 
 .slider {
@@ -296,26 +314,6 @@ div.redes {
   width: auto;
   height: 100%;
 }
-/* .right-arrow {
-  position: absolute;
-  top: 50%;
-  right: 32px;
-  font-size: 2.5rem;
-  cursor: pointer;
-  color: rgb(0, 0, 0);
-  z-index: 10;
-  user-select: none;
-}
-.left-arrow {
-  position: absolute;
-  top: 50%;
-  left: 32px;
-  font-size: 2.5rem;
-  cursor: pointer;
-  color: rgb(0, 0, 0);
-  z-index: 10;
-  user-select: none;
-} */
 #imgTooltip {
   font-size: 16px;
   padding: 0px 10px;
@@ -341,10 +339,6 @@ div.redes {
   z-index: 10;
   user-select: none;
 }
-/* .slideX{ */
-/* transition */
-/* } */
-
 .slide.active {
   opacity: 1;
   transition-duration: 1s;

@@ -5,13 +5,14 @@ export const Footer = () => {
   return (
     <footer id="footer">
       <div className="col row" id="seccionA">
-        <Localizacion />
         <Horarios />
-      </div>
-      <div className="derechos">
-        <p className="derechosP">Copyright © 2022. Museo de Arte Popular. Todos los derechos reservados</p>
+        <Localizacion />
       </div>
       <Redes />
+      <div className="derechos">
+        <p className="derechosP1">Copyright © 2022. Museo de Arte Popular</p>
+        <p className="derechosP2">Todos los derechos reservados</p>
+      </div>
     </footer>
   );
 };
