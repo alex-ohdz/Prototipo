@@ -12,7 +12,7 @@ export const Navegador = () => {
         <Container fluid>
           <Link to="/">
             <Navbar.Brand>
-              <img src="src\assets\Images\Iconos\person-circle.svg" alt="" />
+              {/* <img src="src\assets\Images\Iconos\person-circle.svg" alt="" /> */}
               Museo De Las Parrandas
             </Navbar.Brand>
           </Link>
