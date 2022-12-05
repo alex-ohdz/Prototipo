@@ -1,6 +1,6 @@
-const { getCardsFromFirestore, addCardToFirestore } = require("../services/firebase");
+import { getCardsFromFirestore, addCardToFirestore } from "../services/firebase.mjs";
 
-async function fetchCards() {
+export async function fetchCards() {
 	const cards = await getCardsFromFirestore()
 	return cards
 }
@@ -13,12 +13,7 @@ async function fetchCards() {
  * } data 
  * @returns 
  */
-async function addNewCard(data) {
+export async function addNewCard(data) {
 	const response = await addCardToFirestore(data)
 	return response
-}
-
-module.exports = {
-	fetchCards,
-	addNewCard
 }
