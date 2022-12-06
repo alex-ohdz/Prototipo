@@ -4,12 +4,12 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import { cardInfo } from '../../assets/Data/data'
 
-import {
-  fetchCards
-} from '../../fetch/firebase/controllers/cards.mjs'
+import { firestore } from '../../../firebase'
+
 export const Destacado = () => {
   useEffect(() => {
-    fetchCards()
+    firestore
+      .getCardsFromFirestore()
       .then(cards => {
         console.log(cards)
       })
