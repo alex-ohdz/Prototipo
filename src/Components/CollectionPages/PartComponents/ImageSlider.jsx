@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import { AccordionSlider } from "./Accordion";
 
-export const ImageSlider = () => {
+export const ImageSlider = ({value}) => {
   const [picture, setPicture] = useState([]);
 
   useEffect(() => {
@@ -30,9 +30,6 @@ export const ImageSlider = () => {
 
   return (
     <>
-      <h2 className="linea">
-        <span>ARTE</span>
-      </h2>
       <section className="slider">
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
         <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />

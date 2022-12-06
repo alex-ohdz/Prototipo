@@ -4,14 +4,16 @@ import { Mapa } from './Mapa'
 export const Localizacion = () => {
   return (
 	<div className="info col-md-6 col-sm-6">
-	<h4>Visitanos</h4>
+	<h4 className='titleF'>Visítanos</h4>
 	<hr />
-	<p>
-	  aqui va la direccion de el museo
+	<h6>Museo de las Parrandas :</h6>
+	<p className='bodyF'>
+	Calle Alejandro del Río #74 / Máximo Gómez y Enrique Malaret. 
 	  <br />
-	  Remedios ,Villa Clara Cuba
+	   Remedios, Villa Clara, Cuba.
 	</p>
 	<Mapa/>
+	<p className='bodyF'>Teléfono : 42396818</p>
   </div>
   )
 }

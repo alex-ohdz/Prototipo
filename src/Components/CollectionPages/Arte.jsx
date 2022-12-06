@@ -3,7 +3,10 @@ import { ImageSlider } from "./PartComponents/ImageSlider";
 export const Arte = () => {
   return (
     <>
-      <ImageSlider />
-    </>
+    <h2 className="linea">
+      <span>Arte</span>
+    </h2>
+    <ImageSlider />
+  </>
   );
 };

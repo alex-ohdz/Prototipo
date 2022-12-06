@@ -1,5 +1,12 @@
-import { Colleccion } from "./PartComponents/Colleccion";
+import { ImageSlider } from "./PartComponents/ImageSlider";
 
 export const Documentos = () => {
-  return <Colleccion />;
+  return (
+  <>
+    <h2 className="linea">
+      <span>Documentos</span>
+    </h2>
+    <ImageSlider />
+  </>
+  );
 };

@@ -1,6 +1,12 @@
+import { ImageSlider } from "./PartComponents/ImageSlider";
 
 export const Historia = () => {
   return (
-	<div>Historia</div>
-  )
-}
+    <>
+      <h2 className="linea">
+        <span>Historia</span>
+      </h2>
+      <ImageSlider />
+    </>
+  );
+};
