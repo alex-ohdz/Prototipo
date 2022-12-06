@@ -3,8 +3,10 @@ import { ImageSlider } from "./PartComponents/ImageSlider";
 export const Historia = () => {
   return (
     <>
-      <ImageSlider value="Historia" />
-      <div></div>
+      <h2 className="linea">
+        <span>Historia</span>
+      </h2>
+      <ImageSlider />
     </>
   );
 };

@@ -30,9 +30,6 @@ export const ImageSlider = ({value}) => {
 
   return (
     <>
-      <h2 className="linea">
-        <span>{value}</span>
-      </h2>
       <section className="slider">
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
         <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />

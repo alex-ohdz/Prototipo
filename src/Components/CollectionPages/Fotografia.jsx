@@ -1,5 +1,12 @@
 import { ImageSlider } from "./PartComponents/ImageSlider";
 
 export const Fotografia = () => {
-  return <ImageSlider value="Fotografía"/>;
+  return (
+    <>
+      <h2 className="linea">
+        <span>Fotografía</span>
+      </h2>
+      <ImageSlider />
+    </>
+  );
 };

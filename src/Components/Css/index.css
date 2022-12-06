@@ -350,6 +350,7 @@ dl, ol, ul {
   opacity: 1;
   transition-duration: 1s;
 }
+
 .linea {
   font-family: "Hoefler Text A", "Hoefler Text B";
   justify-content: center;
@@ -365,6 +366,11 @@ dl, ol, ul {
 h2.linea span {
   background: #fff;
   padding: 0 15px;
+}
+/* -------------paginas de historia-------------- */
+.histP{
+  padding: 30px;
+  background-color: rgb(0, 0, 202);
 }
 /* ------------------componente de caruseles----------------------- */
 .caruselAll {
@@ -543,4 +549,8 @@ margin-left: 20px;
 margin-right: 20px;
 padding: 8px;
 margin-bottom: 10px;
+}
+.sala{
+font-family: "Hoefler Text A", "Hoefler Text B";
+font-size: large;
 }
