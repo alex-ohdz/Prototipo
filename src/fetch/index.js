@@ -1,3 +1,4 @@
-module.exports = {
-	cardsManager: require('./firebase/controllers/cards')
+import { addNewCard, fetchCards } from "./firebase/controllers/cards.mjs"
+export default {
+	addNewCard, fetchCards
 }
