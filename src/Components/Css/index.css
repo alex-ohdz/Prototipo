@@ -15,10 +15,11 @@ body {
   border-bottom: #000000 solid 1px;
 }
 #root > nav > div > a {
-  font-family: "Calisto Mt", "Helvetica Now", "Arial", "sans-serif";
+  font-family: 'Calisto Mt', 'Helvetica Now', 'Arial', 'sans-serif';
   outline: none;
   text-decoration: none;
 }
+
 #root > nav > div > button {
   padding: 15px 15px;
   text-align: center;
@@ -38,11 +39,14 @@ body {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
+/* .cambiar:active .offcanvas-backdrop.fade {
+  visibility: hidden;
+} */
+
 .offcanvas-body {
   overflow-y: visible;
 }
 #offcanvasNavbar-expand-md > div.offcanvas-body > div {
-  display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   align-items: baseline;
@@ -84,7 +88,7 @@ body {
 
 #offcanvasNavbarLabel-expand-md > .cambiar {
   overflow: hidden;
-  font-family: "Calisto Mt", "Helvetica Now", "Arial", "sans-serif";
+  font-family: 'Calisto Mt', 'Helvetica Now', 'Arial', 'sans-serif';
   font-weight: 500;
   padding-bottom: 50px;
   text-transform: uppercase;
@@ -102,7 +106,7 @@ body {
   width: 35px;
 }
 /* -----------------ZonaAbout-------------------------------- */
-.about{
+.about {
   padding-top: 35px;
   text-align: center;
   color: rgb(255, 255, 255);
@@ -178,7 +182,7 @@ body {
   padding-bottom: 2%;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 /* --------------------Footer---------------------------*/
 /* pegar footer al final de la pagina */
@@ -189,11 +193,11 @@ body {
   margin-top: 0px;
 }
 .bodyF1 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 18px;
 }
 .bodyF {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 16px;
 }
 .derechos {
@@ -204,13 +208,13 @@ body {
   align-items: baseline;
 }
 @media screen and (max-width: 560px) {
-.derechos {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: #000000;
-}
+  .derechos {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+  }
 }
 .derechosP1 {
   color: #ffffff;
@@ -246,8 +250,9 @@ body {
   color: #000000;
   border-top: 2px solid;
 }
-.titleRedes{
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.titleRedes {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding-top: 10px;
 }
 div.redes {
@@ -255,7 +260,9 @@ div.redes {
   align-items: center;
   justify-content: flex-end;
 }
-dl, ol, ul {
+dl,
+ol,
+ul {
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -352,7 +359,7 @@ dl, ol, ul {
 }
 
 .linea {
-  font-family: "Hoefler Text A", "Hoefler Text B";
+  font-family: 'Hoefler Text A', 'Hoefler Text B';
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -368,9 +375,41 @@ h2.linea span {
   padding: 0 15px;
 }
 /* -------------paginas de historia-------------- */
-.histP{
-  padding: 30px;
-  background-color: rgb(0, 0, 202);
+.historia {
+  align-items: center;
+  padding-top: 50px;
+  background-color: rgb(45, 103, 165);
+  text-align: center;
+}
+.barrios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+.barriosHead{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: #000000 2px 2px 2px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.barrioA {
+  display: flex;
+  color: rgb(255, 255, 255);
+  height: 60vh;
+  width: auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+img.barrioAImg {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 15px ;
 }
 /* ------------------componente de caruseles----------------------- */
 .caruselAll {
@@ -484,17 +523,19 @@ h5.titleSlider {
   justify-content: center;
   align-items: center;
   font-size: 25px;
-  font-family: "Hoefler Text A", "Hoefler Text B";
+  font-family: 'Hoefler Text A', 'Hoefler Text B';
   background-color: #00000099;
 }
 /* ----------------Pagina de Eventos----------------------- */
 
 .hGallery {
-  margin-top: 50px;
+  margin-top: 100px;
   text-align: center;
   margin-bottom: 40px;
-  background-color: #b5b5b5;
+  background-color: #ffffff;
+  font-family: 'Hoefler Text A', 'Hoefler Text B';
 }
+
 .contSup {
   background-color: #b5b5b5;
   padding-bottom: 20px;
@@ -532,25 +573,25 @@ h5.titleSlider {
 }
 /* -------------------Pagina de Visita------------ */
 
-#titleVisita{
+#titleVisita {
   margin-top: 80px;
   text-align: center;
   margin-bottom: 10px;
 }
-.titleSalas{
+.titleSalas {
   margin-top: 20px;
   text-align: center;
   margin-bottom: 10px;
 }
-.salasM{
-box-shadow: #303030 0px 1px 5px 2px;
-background-color:#8e8f40;
-margin-left: 20px;
-margin-right: 20px;
-padding: 8px;
-margin-bottom: 10px;
+.salasM {
+  box-shadow: #303030 0px 1px 5px 2px;
+  background-color: #8e8f40;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 8px;
+  margin-bottom: 10px;
 }
-.sala{
-font-family: "Hoefler Text A", "Hoefler Text B";
-font-size: large;
+.sala {
+  font-family: 'Hoefler Text A', 'Hoefler Text B';
+  font-size: large;
 }
