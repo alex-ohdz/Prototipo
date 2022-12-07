@@ -14,3 +14,25 @@ const app = initializeApp(
 );
 export const firestore = FirestoreService(app)
 export const storage = CloudStorageService(app)
+
+export const getCards = async () => {
+
+	const cardsNotRoute = await firestore
+		.getCardsFromFirestore()
+	console.log(cardsNotRoute)
+
+	const finalCards =
+		await Promise.all(cardsNotRoute
+			.map
+			(async card => {
+				return {
+					title: card.title,
+					description: card.description
+					,
+					image: await storage.getImage(card.img)
+				}
+			}))
+	console.log(finalCards)
+	return finalCards
+
+}

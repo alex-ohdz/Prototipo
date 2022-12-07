@@ -1,23 +1,23 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import { cardInfo } from '../../assets/Data/data'
 
-import { firestore } from '../../../firebase/index'
+import { getCards } from '../../../firebase/index'
 
 export const Destacado = () => {
+  const [cardInfo, setCardInfo] = useState([])
+
   useEffect(() => {
-    firestore
-      .getCardsFromFirestore()
-      .then(cards => {
-        console.log(cards)
-      })
-      .catch(err => {
-        console.log(err)
-      })
+    async function get() {
+      const cards = await getCards()
+      console.log(cards)
+      setCardInfo(cards)
+    }
+    get()
     return () => {}
-  })
+  }, [])
   const renderCard = (card, index) => {
     return (
       <>
