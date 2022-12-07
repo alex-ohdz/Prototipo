@@ -11,8 +11,7 @@ export const Destacado = () => {
 
   useEffect(() => {
     async function get() {
-      const cards = await getCollection("Cards")
-      console.log(cards)
+      const cards = await getCollection('Destacados')
       setCardInfo(cards)
     }
     get()

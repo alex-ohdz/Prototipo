@@ -4,7 +4,7 @@ export const CloudStorageService = (app) => {
 
 	async function getImage(imageName) {
 		const store = getStorage(app);
-		const gsReference = ref(store, 'gs://testing-e2777.appspot.com/images/' + imageName);
+		const gsReference = ref(store, imageName);
 		return await getDownloadURL(gsReference)
 	}
 	return {

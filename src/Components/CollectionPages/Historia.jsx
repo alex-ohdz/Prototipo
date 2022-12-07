@@ -8,7 +8,7 @@ export const Historia = () => {
       <h2 className='linea'>
         <span>Historia</span>
       </h2>
-      <ImageSlider />
+      <ImageSlider  collection="Historia" />
       <Barrios/>
     </>
   )

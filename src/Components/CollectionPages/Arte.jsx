@@ -6,7 +6,7 @@ export const Arte = () => {
     <h2 className="linea">
       <span>Arte</span>
     </h2>
-    <ImageSlider />
+    <ImageSlider collection="Arte"/>
   </>
   );
 };

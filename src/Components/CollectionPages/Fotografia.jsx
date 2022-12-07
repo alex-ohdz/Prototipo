@@ -6,7 +6,7 @@ export const Fotografia = () => {
       <h2 className="linea">
         <span>Fotografía</span>
       </h2>
-      <ImageSlider />
+      <ImageSlider  collection="Fotografia"/>
     </>
   );
 };

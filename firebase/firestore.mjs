@@ -5,6 +5,7 @@ export const FirestoreService = (app) => {
 	const db = getFirestore(app);
 
 	async function getCollectionFromFirestore(folder) {
+		console.log(folder)
 		const data = []
 		const result = await getDocs(collection(db, folder));
 
