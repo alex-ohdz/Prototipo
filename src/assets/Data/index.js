@@ -6,11 +6,10 @@
 //   }
 // });
 export const EventoApp = () => {
-const linkesEvent = document.querySelectorAll(".cambiar");
+  const linkesEvent = document.querySelectorAll('.cambiar')
 
-//Eventos
-linkesEvent.addEventListener('click', () => {
-  console.log("click");
-});
-};
-
+  //Eventos
+  linkesEvent.addEventListener('click', () => {
+    console.log('click')
+  })
+}

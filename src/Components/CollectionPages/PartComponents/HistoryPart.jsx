@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export const HistoryPart = () => {
   return (
@@ -18,5 +18,5 @@ export const HistoryPart = () => {
         gran complejo de 35 parrandas.
       </p>
     </>
-  );
-};
+  )
+}

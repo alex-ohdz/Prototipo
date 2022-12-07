@@ -168,7 +168,6 @@ body {
 
 #destacado > div > div > div > img {
   border-radius: 12px 12px 0px 0px;
- 
 }
 #destacado > div > div:hover {
   transform: translateY(-3px) scale(1.03);
@@ -190,12 +189,6 @@ body {
   color: rgb(255, 255, 255);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-
-
-
-
-
 
 /* --------------------Footer---------------------------*/
 /* pegar footer al final de la pagina */
@@ -402,7 +395,7 @@ h2.linea span {
   flex-wrap: wrap;
   padding-bottom: 30px;
 }
-.barriosHead{
+.barriosHead {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-bottom: 20px;
   color: white;
@@ -422,7 +415,7 @@ h2.linea span {
 img.barrioAImg {
   height: 300px;
   width: 300px;
-  margin-bottom: 15px ;
+  margin-bottom: 15px;
 }
 /* ------------------componente de caruseles----------------------- */
 .caruselAll {

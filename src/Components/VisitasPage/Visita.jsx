@@ -1,5 +1,5 @@
-import { VisitaParts } from "./PartsComponents/VisitaParts";
+import { VisitaParts } from './PartsComponents/VisitaParts'
 
 export const Visita = () => {
-  return <VisitaParts />;
-};
+  return <VisitaParts />
+}
