@@ -6,7 +6,7 @@ export const AccordionSlider = ({picture}) => {
       <Accordion.Item eventKey="0">
         <Accordion.Header>Descripción</Accordion.Header>
         <Accordion.Body>
-         {picture.location.name}
+         {picture.title}
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

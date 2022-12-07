@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-import { arteInfo } from '../../assets/Data/data'
+import { getCollection } from '../../../firebase/index'
 
 export const Carrousel = () => {
   const [index, setIndex] = useState(0)
@@ -12,11 +12,13 @@ export const Carrousel = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await getCollection("Carousel")
+      const data = await getCollection('Carousel')
+      console.log(data)
       setArteInfo(data)
     }
 
     fetchData()
+    return () => {}
   }, [])
 
   const renderCarusel = (carusel, index) => {
