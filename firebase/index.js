@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import { CloudStorageService } from "./cloudStorage.js";
 import { FirestoreService } from "./firestore.mjs";
 const app = initializeApp(
 	{

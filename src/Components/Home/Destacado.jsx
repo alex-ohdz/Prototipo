@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import { cardInfo } from '../../assets/Data/data'
 
-import { firestore } from '../../../firebase'
+import { firestore } from '../../../firebase/index'
 
 export const Destacado = () => {
   useEffect(() => {
