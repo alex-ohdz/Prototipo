@@ -3,6 +3,7 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 import { getCollection } from '../../../../firebase/index'
 import { AccordionSlider } from './Accordion'
 
+// eslint-disable-next-line react/prop-types
 export const ImageSlider = ({ collection }) => {
   const [picture, setPicture] = useState([])
 

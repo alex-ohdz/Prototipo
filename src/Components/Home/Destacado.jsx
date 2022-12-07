@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import { cardInfo } from '../../assets/Data/data'
+import React from 'react'
 
 import { getCollection } from '../../../firebase/index'
 
@@ -10,6 +10,7 @@ export const Destacado = () => {
   const [cardInfo, setCardInfo] = useState([])
 
   useEffect(() => {
+    // eslint-disable-next-line require-jsdoc
     async function get() {
       const cards = await getCollection('Destacados')
       setCardInfo(cards)
