@@ -39,7 +39,7 @@ export const Navegador = () => {
               <Nav className='cabecera container-fluid'>
                 <NavDropdown
                   className='cambiar Headers'
-                  title='Colleccion' 
+                  title='Colleccion'
                   id='nav-dropdown'
                 >
                   <NavDropdown.Item>

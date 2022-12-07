@@ -192,10 +192,9 @@ body {
   border-radius: 12px 12px 0px 0px;
 }
 
-
 #destacado > div > div:hover {
-  transform:scale(1.02); 
-  transition: all .5s; 
+  transform: scale(1.02);
+  transition: all 0.5s;
 }
 #destacado > div > div {
   padding-left: 25px;

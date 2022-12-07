@@ -6,12 +6,20 @@ export const Redes = () => {
       <h6 className='titleRedes'>Contáctanos:</h6>
       <ul>
         <li>
-          <a href='https://www.instagram.com/museo.parrandas/' target='_blank' rel="noreferrer">
+          <a
+            href='https://www.instagram.com/museo.parrandas/'
+            target='_blank'
+            rel='noreferrer'
+          >
             <i className='bi bi-instagram'></i>
           </a>
         </li>
         <li>
-          <a href='https://www.facebook.com/museoparrandas/' target='_blank' rel="noreferrer">
+          <a
+            href='https://www.facebook.com/museoparrandas/'
+            target='_blank'
+            rel='noreferrer'
+          >
             <i className='bi bi-facebook'></i>
           </a>
         </li>
@@ -21,14 +29,15 @@ export const Redes = () => {
           </a>
         </li> */}
         <li>
-          <a href='https://t.me/eri5c' target='_blank' rel="noreferrer">
+          <a href='https://t.me/eri5c' target='_blank' rel='noreferrer'>
             <i className='bi bi-telegram'></i>
           </a>
         </li>
         <li>
           <a
             href='https://www.youtube.com/@museodelasparrandas4711'
-            target='_blank' rel="noreferrer"
+            target='_blank'
+            rel='noreferrer'
           >
             <i className='bi bi-youtube'></i>
           </a>
