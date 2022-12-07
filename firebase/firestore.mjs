@@ -4,9 +4,9 @@ export const FirestoreService = (app) => {
 
 	const db = getFirestore(app);
 
-	async function getCardsFromFirestore() {
+	async function getCollectionFromFirestore(folder) {
 		const data = []
-		const result = await getDocs(collection(db, "Card"));
+		const result = await getDocs(collection(db, folder));
 
 		result.forEach(value => {
 			data.push({
@@ -19,12 +19,12 @@ export const FirestoreService = (app) => {
 
 	}
 
-	async function addCardToFirestore(payload) {
-		const data = await addDoc(collection(db, "Card"), payload)
+	async function addDocumentToFirestore(folder, payload) {
+		const data = await addDoc(collection(db, folder), payload)
 		return data
 	}
 	return {
-		getCardsFromFirestore,
-		addCardToFirestore
+		getCollectionFromFirestore,
+		addDocumentToFirestore
 	}
 }

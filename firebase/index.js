@@ -15,10 +15,10 @@ const app = initializeApp(
 export const firestore = FirestoreService(app)
 export const storage = CloudStorageService(app)
 
-export const getCards = async () => {
+export const getCollection = async (folder) => {
 
 	const cardsNotRoute = await firestore
-		.getCardsFromFirestore()
+		.getCollectionFromFirestore(folder)
 	console.log(cardsNotRoute)
 
 	const finalCards =
