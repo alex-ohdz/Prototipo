@@ -15,6 +15,6 @@ await cardsManager.addNewCard({
 	title:"title"
  	description:"description"
  	img:"base64-image"
- 
+
  })
 ```

@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
 export const About = () => {
   return (
-    <div className="about">
+    <div className='about'>
       <h4>¿ Qué son las Parrandas ?</h4>
       <p>
         En la primera mitad del siglo XIX, el padre Francisco Virgel de
@@ -16,5 +16,5 @@ export const About = () => {
         estructura que, en esencia, mantienen en la actualidad.
       </p>
     </div>
-  );
-};
+  )
+}

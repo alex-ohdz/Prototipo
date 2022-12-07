@@ -1,10 +1,10 @@
-import React from "react";
-import { Gallery } from "./PartsComponents/Gallery";
+import React from 'react'
+import { Gallery } from './PartsComponents/Gallery'
 
 export const Eventos = () => {
   return (
     <>
-      <Gallery value="Galería" />
+      <Gallery value='Galería' />
     </>
-  );
-};
+  )
+}
