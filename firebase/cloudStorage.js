@@ -4,7 +4,7 @@ export const CloudStorageService = app => {
   async function getImage(imageName) {
     const store = getStorage(app)
     if (!imageName) {
-      console.log("no image")
+      console.log('no image')
       return null
     }
     const gsReference = ref(store, imageName)
