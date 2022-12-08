@@ -8,7 +8,7 @@
     "build": "npx vite build",
     "preview": "npx vite preview",
     "format": "npx prettier -w ./",
-    "deploy": "npx prettier -w ./ && npx vite build && firebase deploy",
+    "deploy": "npx prettier -w ./ && npx vite build && firebase deploy --only hosting:museo-parrandas",
     "lint": "npx eslint --ext .js,.jsx,.ts,.tsx,.vue src",
     "lint:fix": "npx eslint --ext .js,.jsx,.ts,.tsx,.vue src --fix",
     "push": "npm run format && git add . && git commit -m 'format' && git push"

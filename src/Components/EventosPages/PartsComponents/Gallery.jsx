@@ -2,7 +2,7 @@ import React from 'react'
 import { SliderData } from '../../../assets/Data/SliderData'
 import { StarsButton } from './GalleryParts'
 
-export const Gallery = () => {
+export const Gallery = ({ value }) => {
   const renderGallery = (gallery, index) => {
     return (
       <>
