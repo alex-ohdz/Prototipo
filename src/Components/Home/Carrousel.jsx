@@ -14,7 +14,7 @@ export const Carrousel = () => {
     const fetchData = async () => {
       const data = await getCollection('Carousel')
       console.log(data)
-      setArteInfo(data)
+      setArteInfo(data.filter(item => item.image))
     }
 
     fetchData()

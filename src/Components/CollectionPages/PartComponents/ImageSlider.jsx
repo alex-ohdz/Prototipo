@@ -10,7 +10,7 @@ export const ImageSlider = ({ collection }) => {
   useEffect(() => {
     const fetchData = async () => {
       const data = await getCollection(collection)
-      setPicture(data)
+      setPicture(data.filter(item => item.image))
     }
 
     fetchData()
@@ -30,7 +30,7 @@ export const ImageSlider = ({ collection }) => {
   }
 
   return (
-    <>
+    <div>
       <section className='slider'>
         <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
         <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
@@ -62,6 +62,6 @@ export const ImageSlider = ({ collection }) => {
       </section>
 
       <AccordionSlider picture={picture[current]} />
-    </>
+    </div>
   )
 }
