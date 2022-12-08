@@ -1,7 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-const buttonStar = document.querySelector('.bi-star')
-const buttonNumber = document.querySelector('.button-number')
 
 export const StarsButton = () => {
   const [stars, setStars] = useState(0)

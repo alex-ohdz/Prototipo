@@ -1,6 +1,8 @@
 import { Redes } from './HomeParts/Redes'
 import { Horarios } from './HomeParts/Horarios'
 import { Localizacion } from './HomeParts/Localizacion'
+import React from 'react'
+
 export const Footer = () => {
   return (
     <footer id='footer'>

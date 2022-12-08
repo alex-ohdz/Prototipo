@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import Offcanvas from 'react-bootstrap/Offcanvas'
 import { Link } from 'react-router-dom'
 import NavDropdown from 'react-bootstrap/NavDropdown'
+import React from 'react'
 
 export const Navegador = () => {
   return (
@@ -12,7 +13,8 @@ export const Navegador = () => {
         <Container fluid>
           <Link to='/'>
             <Navbar.Brand>
-              {/* <img src="src\assets\Images\Iconos\person-circle.svg" alt="" /> */}
+              {/* <img src="src\assets\Images\Iconos\person-circle.svg"
+               alt="" /> */}
               Museo De Las Parrandas
             </Navbar.Brand>
           </Link>
@@ -37,7 +39,7 @@ export const Navegador = () => {
               <Nav className='cabecera container-fluid'>
                 <NavDropdown
                   className='cambiar Headers'
-                  title='Colleccion' 
+                  title='Colleccion'
                   id='nav-dropdown'
                 >
                   <NavDropdown.Item>

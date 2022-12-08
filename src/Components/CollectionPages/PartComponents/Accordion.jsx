@@ -1,5 +1,7 @@
 import Accordion from 'react-bootstrap/Accordion'
+import React from 'react'
 
+// eslint-disable-next-line react/prop-types
 export const AccordionSlider = ({ picture }) => {
   return (
     <Accordion defaultActiveKey='0' flush>

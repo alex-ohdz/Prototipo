@@ -7,7 +7,11 @@
     "dev": "npx vite --host",
     "build": "npx vite build",
     "preview": "npx vite preview",
-    "format": "npx prettier -w ./"
+    "format": "npx prettier -w ./",
+    "deploy": "npx prettier -w ./ && npx vite build && firebase deploy",
+    "lint": "npx eslint --ext .js,.jsx,.ts,.tsx,.vue src",
+    "lint:fix": "npx eslint --ext .js,.jsx,.ts,.tsx,.vue src --fix",
+    "push": "npm run format && git push"
   },
   "dependencies": {
     "aos": "^2.3.4",
@@ -24,6 +28,9 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^2.2.0",
+    "eslint": "^8.29.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.31.11",
     "vite": "^3.2.0"
   }
 }
