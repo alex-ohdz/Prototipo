@@ -53,7 +53,6 @@ export const ImageSlider = ({ collection }) => {
         <h5 className='titleSlider'>
           <span>
             <em>
-              {' '}
               {picture[current] && picture[current].title
                 ? picture[current].title + ' , ' + picture[current].description
                 : 'Anónimo'}
