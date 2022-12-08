@@ -67,7 +67,7 @@ body {
 }
 .navbar-nav .dropdown-menu {
   position: absolute;
-  background-color: antiquewhite;
+  background-color: rgba(186, 186, 186, 0.717);
 }
 .colleccion {
   padding-bottom: 8px;
@@ -185,18 +185,20 @@ body {
   background-color: rgb(255, 255, 255);
   border-radius: 12px 12px 12px 12px;
   box-shadow: 1px 0px 8px 0px rgba(0, 0, 0, 0.75);
-  border-width: 0px;
+  border-width: 0;
 }
 
 #destacado > div > div > div > img {
   border-radius: 12px 12px 0px 0px;
+  max-height: 320px;
+  width: auto;
 }
 
 
-#destacado > div > div:hover {
+/* #destacado > div > div:hover {
   transform:scale(1.02); 
   transition: all .5s; 
-}
+} */
 #destacado > div > div {
   padding-left: 25px;
   padding-right: 25px;
@@ -356,7 +358,7 @@ ul {
 }
 .image {
   width: auto;
-  height: 100%;
+  max-height: 600px;
 }
 #imgTooltip {
   font-size: 16px;

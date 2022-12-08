@@ -40,14 +40,15 @@ export const ImageSlider = ({ collection }) => {
               key={picture.id}
             >
               {index === current && (
-                <img src={picture.image} alt='travel image' className='image' />
+                <img src={picture.image} alt='travel image' className='image img-fluid' />
               )}
             </div>
           )
         })}
         <h5 className='titleSlider'>
           <span>
-            <em>{picture[current].title}</em>, {picture[current].description}
+            <em>{picture[current].title}</em>, {picture[current].autor===undefined ? picture[current].autor : 'Anónimo'}
+
           </span>
         </h5>
       </section>
