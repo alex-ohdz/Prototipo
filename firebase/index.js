@@ -4,8 +4,8 @@ import { FirestoreService } from './firestore.mjs'
 import { getAuth } from 'firebase/auth'
 
 import firebase from 'firebase/compat/app'
-import * as firebaseui from 'firebaseui'
-import 'firebaseui/dist/firebaseui.css'
+// import * as firebaseui from 'firebaseui'
+// import 'firebaseui/dist/firebaseui.css'
 const app = initializeApp({
   apiKey: 'AIzaSyDJGvQ8HOUq6y5Hr_JXhJiVaR8khv8vBpg',
   authDomain: 'testing-e2777.firebaseapp.com',
@@ -16,7 +16,7 @@ const app = initializeApp({
   measurementId: 'G-H9TTLWXE2E'
 })
 const auth = getAuth()
-const ui = new firebaseui.auth.AuthUI(auth)
+// const ui = new firebaseui.auth.AuthUI(auth)
 
 const uiConfig = {
   signInSuccessUrl: './',
@@ -36,7 +36,7 @@ const uiConfig = {
 }
 
 // The start method will wait until the DOM is loaded.
-ui.start('#firebaseuiAuthContainer', uiConfig)
+//ui.start('#firebaseuiAuthContainer', uiConfig)
 
 export const firestore = FirestoreService(app)
 export const storage = CloudStorageService(app)
