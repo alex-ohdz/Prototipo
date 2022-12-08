@@ -3,7 +3,11 @@ import { CloudStorageService } from './cloudStorage.js'
 import { FirestoreService } from './firestore.mjs'
 import { getAuth } from 'firebase/auth'
 
+<<<<<<< HEAD
 // import firebase from 'firebase/compat/app'
+=======
+import firebase from 'firebase/compat/app'
+>>>>>>> 38d5558b70f5a7215157736fb4978e688760ae1b
 // import * as firebaseui from 'firebaseui'
 // import 'firebaseui/dist/firebaseui.css'
 const app = initializeApp({
@@ -15,8 +19,13 @@ const app = initializeApp({
   appId: '1:149748237235:web:0f573b9dd7d71c50c5c1c6',
   measurementId: 'G-H9TTLWXE2E'
 })
+<<<<<<< HEAD
 /*const auth = getAuth()
 const ui = new firebaseui.auth.AuthUI(auth)
+=======
+const auth = getAuth()
+// const ui = new firebaseui.auth.AuthUI(auth)
+>>>>>>> 38d5558b70f5a7215157736fb4978e688760ae1b
 
 const uiConfig = {
   signInSuccessUrl: './',
@@ -36,7 +45,11 @@ const uiConfig = {
 }
 */
 // The start method will wait until the DOM is loaded.
+<<<<<<< HEAD
 // ui.start('#firebaseuiAuthContainer', uiConfig)
+=======
+//ui.start('#firebaseuiAuthContainer', uiConfig)
+>>>>>>> 38d5558b70f5a7215157736fb4978e688760ae1b
 
 export const firestore = FirestoreService(app)
 export const storage = CloudStorageService(app)
