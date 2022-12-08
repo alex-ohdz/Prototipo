@@ -1,25 +1,21 @@
-import React from "react";
-import { useState } from "react";
-const buttonStar = document.querySelector('.bi-star');
-const buttonNumber = document.querySelector('.button-number');
-
+import React from 'react'
+import { useState } from 'react'
 
 export const StarsButton = () => {
-  const [stars, setStars] = useState(0);
+  const [stars, setStars] = useState(0)
   const handleIncrement = () => {
-    setStars(stars + 1);
-
-}
+    setStars(stars + 1)
+  }
   return (
     <>
-      <div className="contadorStar">
-        <p className="button-number">{stars}</p>
+      <div className='contadorStar'>
+        <p className='button-number'>{stars}</p>
       </div>
-      <div className="contadorButton">
-        <button onClick={handleIncrement} className="button-star">
-          <i className="bi bi-star"></i>
+      <div className='contadorButton'>
+        <button onClick={handleIncrement} className='button-star'>
+          <i className='bi bi-star'></i>
         </button>
       </div>
     </>
-  );
-};
+  )
+}

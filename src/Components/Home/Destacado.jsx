@@ -1,23 +1,23 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import { cardInfo } from '../../assets/Data/data'
+import React from 'react'
 
-import {
-  fetchCards
-} from '../../fetch/firebase/controllers/cards.mjs'
+import { getCollection } from '../../../firebase/index'
+
 export const Destacado = () => {
+  const [cardInfo, setCardInfo] = useState([])
+
   useEffect(() => {
-    fetchCards()
-      .then(cards => {
-        console.log(cards)
-      })
-      .catch(err => {
-        console.log(err)
-      })
+    // eslint-disable-next-line require-jsdoc
+    async function get() {
+      const cards = await getCollection('Destacados')
+      setCardInfo(cards)
+    }
+    get()
     return () => {}
-  })
+  }, [])
   const renderCard = (card, index) => {
     return (
       <>
@@ -36,7 +36,7 @@ export const Destacado = () => {
   return (
     <div id='destacado'>
       <h2>DESTACADO</h2>
-      <Row xs={1} sm={2} md={2} lg={3} className='g-4'>
+      <Row xs={1} sm={2} md={2} lg={3} className='g-3'>
         {cardInfo.map(renderCard)}
       </Row>
     </div>
