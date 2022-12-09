@@ -199,7 +199,7 @@ body {
     height: 18em;
     width: auto;
   }
-  }
+}
 
 @media screen and (min-width: 900px) {
   #destacado > div > div > div > img {
@@ -207,8 +207,7 @@ body {
     height: 20em;
     width: auto;
   }
-  }
-
+}
 
 /* #destacado > div > div:hover {
   transform:scale(1.02); 
@@ -278,7 +277,6 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   background-color: #eee;
- 
 }
 #root > footer > div#seccionA > div.info > hr {
   width: 98%;
