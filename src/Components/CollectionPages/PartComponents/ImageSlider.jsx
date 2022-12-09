@@ -10,7 +10,7 @@ export const ImageSlider = ({ collection }) => {
   useEffect(() => {
     const fetchData = async () => {
       const data = await getCollection(collection)
-      setPicture(data)
+      setPicture(data.filter(item => item.image))
     }
 
     fetchData()
@@ -30,7 +30,7 @@ export const ImageSlider = ({ collection }) => {
   }
 
   return (
-    <>
+    <div>
       <section className='slider'>
         <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
         <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
@@ -52,15 +52,16 @@ export const ImageSlider = ({ collection }) => {
         })}
         <h5 className='titleSlider'>
           <span>
-            <em>{picture[current].title}</em>,{' '}
-            {picture[current].autor === undefined
-              ? picture[current].autor
-              : 'Anónimo'}
+            <em>
+              {picture[current] && picture[current].title
+                ? picture[current].title + ' , ' + picture[current].description
+                : 'Anónimo'}
+            </em>
           </span>
         </h5>
       </section>
 
       <AccordionSlider picture={picture[current]} />
-    </>
+    </div>
   )
 }

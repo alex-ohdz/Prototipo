@@ -13,7 +13,7 @@ export const Destacado = () => {
     // eslint-disable-next-line require-jsdoc
     async function get() {
       const cards = await getCollection('Destacados')
-      setCardInfo(cards)
+      setCardInfo(cards.filter(item => item.image))
     }
     get()
     return () => {}

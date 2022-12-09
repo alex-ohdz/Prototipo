@@ -3,9 +3,9 @@ import { CloudStorageService } from './cloudStorage.js'
 import { FirestoreService } from './firestore.mjs'
 import { getAuth } from 'firebase/auth'
 
-import firebase from 'firebase/compat/app'
-import * as firebaseui from 'firebaseui'
-import 'firebaseui/dist/firebaseui.css'
+// import firebase from 'firebase/compat/app'
+// import * as firebaseui from 'firebaseui'
+// import 'firebaseui/dist/firebaseui.css'
 const app = initializeApp({
   apiKey: 'AIzaSyDJGvQ8HOUq6y5Hr_JXhJiVaR8khv8vBpg',
   authDomain: 'testing-e2777.firebaseapp.com',
@@ -15,7 +15,7 @@ const app = initializeApp({
   appId: '1:149748237235:web:0f573b9dd7d71c50c5c1c6',
   measurementId: 'G-H9TTLWXE2E'
 })
-const auth = getAuth()
+/*const auth = getAuth()
 const ui = new firebaseui.auth.AuthUI(auth)
 
 const uiConfig = {
@@ -34,9 +34,9 @@ const uiConfig = {
   // Privacy policy url.
   privacyPolicyUrl: './#privacy'
 }
-
+*/
 // The start method will wait until the DOM is loaded.
-ui.start('#firebaseuiAuthContainer', uiConfig)
+// ui.start('#firebaseuiAuthContainer', uiConfig)
 
 export const firestore = FirestoreService(app)
 export const storage = CloudStorageService(app)
@@ -48,6 +48,7 @@ export const getCollection = async folder => {
   const finalCards = await Promise.all(
     cardsNotRoute.map(async card => {
       return {
+        id: card.id,
         title: card.title,
         description: card.description,
         image: await storage.getImage(card.img)
