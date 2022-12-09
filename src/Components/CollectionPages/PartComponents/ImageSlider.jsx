@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'https://cdn.jsdelivr.net/npm/react-icons@4.7.1/fa/index.min.js'
 import { getCollection } from '../../../../firebase/index'
 import { AccordionSlider } from './Accordion'
 
@@ -54,14 +54,14 @@ export const ImageSlider = ({ collection }) => {
           <span>
             <em>
               {picture[current] && picture[current].title
-                ? picture[current].title + ' , ' + picture[current].description
+                ? picture[current].title
                 : 'Anónimo'}
             </em>
           </span>
         </h5>
       </section>
 
-      <AccordionSlider picture={picture[current]} />
+      <AccordionSlider picture={picture[current].description} />
     </div>
   )
 }

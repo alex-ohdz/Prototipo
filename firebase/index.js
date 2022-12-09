@@ -49,6 +49,7 @@ export const getCollection = async folder => {
     cardsNotRoute.map(async card => {
       return {
         id: card.id,
+        autor: card.autor,
         title: card.title,
         description: card.description,
         image: await storage.getImage(card.img)
