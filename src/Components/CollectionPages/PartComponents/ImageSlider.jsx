@@ -54,14 +54,18 @@ export const ImageSlider = ({ collection }) => {
           <span>
             <em>
               {picture[current] && picture[current].title
-                ? picture[current].title + ' , ' + picture[current].autor
+                ? picture[current].title
+                : 'Anónimo'}
+              ,{' '}
+              {picture[current] && picture[current].autor
+                ? picture[current].autor
                 : 'Anónimo'}
             </em>
           </span>
         </h5>
       </section>
 
-      <AccordionSlider picture={picture[current].description} />
+      <AccordionSlider picture={picture[current]} />
     </div>
   )
 }
