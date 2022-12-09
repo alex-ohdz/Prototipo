@@ -1,6 +1,6 @@
 import ReactAudioPlayer from 'react-audio-player'
-import foto1 from '../../assets/Images/C1.jpg'
-import foto2 from '../../assets/Images/C2.jpg'
+import foto1 from '../../../assets/Images/C1.jpg'
+import foto2 from '../../../assets/Images/C2.jpg'
 export const Barrios = () => {
   return (
     <section className='historia'>
