@@ -11,13 +11,9 @@ AOS.init()
 export const Home = () => {
   return (
     <>
-      {/* <Navegador /> */}
-
       <Carrousel />
       <About />
       <Destacado />
-      {/* <Footer /> */}
-      {/* <Eventos /> */}
     </>
   )
 }
