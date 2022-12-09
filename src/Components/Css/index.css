@@ -238,6 +238,13 @@ body {
     width: auto;
   }
 }
+@media screen and (min-width: 1000px) {
+  #destacado > div > div > div > img {
+    border-radius: 12px 12px 0px 0px;
+    height: 20em;
+    width: auto;
+  }
+}
 
 /* #destacado > div > div:hover {
   transform:scale(1.02); 
