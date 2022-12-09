@@ -16,7 +16,7 @@ export const Barrios = () => {
             alt='El Carmen'
           />
           <ReactAudioPlayer
-            src='src\assets\Audio\PolcaElCarmen(entrada).mp3'
+            src='src\assets\Audio\PolcaElCarmen(entrada).ogg'
             controls
           />
         </div>
@@ -28,7 +28,7 @@ export const Barrios = () => {
             alt='El San Salvador'
           />
           <ReactAudioPlayer
-            src='src\assets\Audio\PolcaSanSalvador(carroza).mp3'
+            src='src\assets\Audio\PolcaSanSalvador(carroza).ogg'
             controls
           />
         </div>
