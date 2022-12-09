@@ -1,8 +1,8 @@
 import ReactAudioPlayer from 'react-audio-player'
 import foto1 from '../../../assets/Images/C1.jpg'
 import foto2 from '../../../assets/Images/C2.jpg'
-import audio1 from '../../../assets/Audio/PolcaElCarmen(entrada).ogg'
-import audio2 from '../../../assets/Audio/PolcaSanSalvador(carroza).ogg'
+import audio1 from '../../../assets/Audio/PolcaElCarmen.ogg'
+import audio2 from '../../../assets/Audio/PolcaSanSalvador.ogg'
 
 export const Barrios = () => {
   return (
