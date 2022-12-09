@@ -47,6 +47,7 @@ export const getCollection = async folder => {
 
   const finalCards = await Promise.all(
     cardsNotRoute.map(async card => {
+      console.log(card)
       return {
         id: card.id,
         autor: card.autor,

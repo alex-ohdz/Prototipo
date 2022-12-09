@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'https://cdn.jsdelivr.net/npm/react-icons@4.7.1/fa/index.min.js'
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 import { getCollection } from '../../../../firebase/index'
 import { AccordionSlider } from './Accordion'
 
