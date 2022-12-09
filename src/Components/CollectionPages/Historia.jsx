@@ -1,6 +1,5 @@
 import { Barrios } from './PartComponents/Barrios'
 import { ImageSlider } from './PartComponents/ImageSlider'
-import React from 'react'
 
 export const Historia = () => {
   return (

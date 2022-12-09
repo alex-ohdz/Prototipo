@@ -1,11 +1,12 @@
-import React from 'react'
 import ReactAudioPlayer from 'react-audio-player'
 export const Barrios = () => {
   return (
     <section className='historia'>
       <h1 className='barriosHead'>Barrios y sus polcas</h1>
       <h4 className='barriosHead'>Remedios</h4>
-      <h6 className='barriosHead'>Se realizan los 24 de diciembre de cada año</h6>
+      <h6 className='barriosHead'>
+        Se realizan los 24 de diciembre de cada año
+      </h6>
       <div className='barrios'>
         <div className='barrioA'>
           <h4>El Carmen</h4>
