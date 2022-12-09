@@ -190,8 +190,15 @@ body {
 
 #destacado > div > div > div > img {
   border-radius: 12px 12px 0px 0px;
-  max-height: 320px;
+  height: 15em;
   width: auto;
+}
+@media screen and (min-width: 720px) {
+  #destacado > div > div > div > img {
+    border-radius: 12px 12px 0px 0px;
+    height: 18em;
+    width: auto;
+  }
 }
 
 /* #destacado > div > div:hover {
