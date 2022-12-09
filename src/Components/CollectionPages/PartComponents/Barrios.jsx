@@ -1,6 +1,9 @@
 import ReactAudioPlayer from 'react-audio-player'
 import foto1 from '../../../assets/Images/C1.jpg'
 import foto2 from '../../../assets/Images/C2.jpg'
+import audio1 from '../../../assets/Audio/PolcaElCarmen(entrada).ogg'
+import audio2 from '../../../assets/Audio/PolcaSanSalvador(carroza).ogg'
+
 export const Barrios = () => {
   return (
     <section className='historia'>
@@ -18,7 +21,7 @@ export const Barrios = () => {
             alt='El Carmen'
           />
           <ReactAudioPlayer
-            src='src\assets\Audio\PolcaElCarmen(entrada).ogg'
+            src={audio1}
             controls
           />
         </div>
@@ -30,7 +33,7 @@ export const Barrios = () => {
             alt='El San Salvador'
           />
           <ReactAudioPlayer
-            src='src\assets\Audio\PolcaSanSalvador(carroza).ogg'
+            src={audio2}
             controls
           />
         </div>
