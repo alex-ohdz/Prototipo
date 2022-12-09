@@ -1,5 +1,4 @@
 import Accordion from 'react-bootstrap/Accordion'
-import React from 'react'
 
 // eslint-disable-next-line react/prop-types
 export const AccordionSlider = ({ picture }) => {

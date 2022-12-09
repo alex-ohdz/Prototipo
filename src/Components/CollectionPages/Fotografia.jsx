@@ -1,5 +1,4 @@
 import { ImageSlider } from './PartComponents/ImageSlider'
-import React from 'react'
 
 export const Fotografia = () => {
   return (

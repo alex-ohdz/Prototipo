@@ -1,4 +1,3 @@
-import React from 'react'
 import { Mapa } from './Mapa'
 
 export const Localizacion = () => {

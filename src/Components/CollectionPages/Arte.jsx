@@ -1,6 +1,4 @@
 import { ImageSlider } from './PartComponents/ImageSlider'
-import React from 'react'
-
 export const Arte = () => {
   return (
     <>

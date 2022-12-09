@@ -1,4 +1,6 @@
 import ReactAudioPlayer from 'react-audio-player'
+import foto1 from '../../assets/Images/C1.jpg'
+import foto2 from '../../assets/Images/C2.jpg'
 export const Barrios = () => {
   return (
     <section className='historia'>
@@ -12,7 +14,7 @@ export const Barrios = () => {
           <h4>El Carmen</h4>
           <img
             className='barrioAImg img-fluid'
-            src='src\assets\Images\C2.jpg'
+            src={foto1}
             alt='El Carmen'
           />
           <ReactAudioPlayer
@@ -24,7 +26,7 @@ export const Barrios = () => {
           <h4>El San Salvador</h4>
           <img
             className='barrioAImg img-fluid'
-            src='src\assets\Images\C1.jpg'
+            src={foto2}
             alt='El San Salvador'
           />
           <ReactAudioPlayer
