@@ -54,7 +54,7 @@ export const ImageSlider = ({ collection }) => {
           <span>
             <em>
               {picture[current] && picture[current].title
-                ? picture[current].title + ' , ' + picture[current].description
+                ? picture[current].title + ' , ' + picture[current].autor
                 : 'Anónimo'}
             </em>
           </span>

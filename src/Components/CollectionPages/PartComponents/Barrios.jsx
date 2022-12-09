@@ -11,7 +11,7 @@ export const Barrios = () => {
           <img
             className='barrioAImg img-fluid'
             src='src\assets\Images\C2.jpg'
-            alt='El sCarmen'
+            alt='El Carmen'
           />
           <ReactAudioPlayer
             src='src\assets\Audio\PolcaElCarmen(entrada).mp3'
