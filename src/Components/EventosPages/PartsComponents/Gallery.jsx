@@ -2,7 +2,7 @@ import React from 'react'
 import { SliderData } from '../../../assets/Data/SliderData'
 import { StarsButton } from './GalleryParts'
 
-export const Gallery = ({ value }) => {
+export const Gallery = () => {
   const renderGallery = (gallery, index) => {
     return (
       <>
@@ -24,7 +24,7 @@ export const Gallery = ({ value }) => {
   return (
     <>
       <h2 className='linea'>
-        <span>{value}</span>
+        <span>Galería</span>
       </h2>
       <div className='gallery-container'>{SliderData.map(renderGallery)}</div>
     </>

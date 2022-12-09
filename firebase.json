@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "museo-parrandas",
+    "site": "museodelasparrandas",
     "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
