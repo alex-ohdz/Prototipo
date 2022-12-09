@@ -8,7 +8,6 @@ import { Documentos } from '../CollectionPages/Documentos'
 import { Eventos } from '../EventosPages/Eventos'
 import { Visita } from '../VisitasPage/Visita'
 import { Footer } from '../Home/Footer'
-import React from 'react'
 
 export const Router = () => {
   return (
