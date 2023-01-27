@@ -1,4 +1,4 @@
-import { Barrios } from './PartComponents/Barrios'
+// import { Barrios } from './PartComponents/Barrios'
 import { ImageSlider } from './PartComponents/ImageSlider'
 
 export const Historia = () => {
@@ -8,7 +8,7 @@ export const Historia = () => {
         <span>Historia</span>
       </h2>
       <ImageSlider collection='Historia' />
-      <Barrios />
+      {/* <Barrios /> */}
     </>
   )
 }

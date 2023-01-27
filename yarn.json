@@ -4,24 +4,22 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npx vite --host",
-    "build": "npx vite build",
-    "preview": "npx vite preview",
-    "format": "npx prettier -w ./",
-    "deploy": "npx prettier -w ./ && npx vite build && firebase deploy --only hosting:museodelasparrandas",
-    "lint": "npx eslint --ext .js,.jsx,.ts,.tsx,.vue src",
-    "lint:fix": "npx eslint --ext .js,.jsx,.ts,.tsx,.vue src --fix",
-    "push": "npm run format && git add . && git commit -m 'format' && git push"
+    "dev": "yarn vite --host",
+    "build": "yarn vite build",
+    "preview": "yarn vite preview",
+    "format": "yarn prettier -w ./",
+    "deploy": "yarn prettier -w ./ && npx vite build && firebase deploy --only hosting:museodelasparrandas",
+    "lint": "yarn eslint --ext .js,.jsx,.ts,.tsx,.vue src",
+    "lint:fix": "yarn eslint --ext .js,.jsx,.ts,.tsx,.vue src --fix",
+    "push": "yarn run format && git add . && git commit -m 'format' && git push"
   },
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
     "react-bootstrap": "^2.5.0",
     "react-icons": "^4.6.0",
-    "firebase": "^9.14.0",
     "i": "^0.3.7",
     "react": "^18.2.0",
-    "react-audio-player": "^0.17.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "6"
   },
