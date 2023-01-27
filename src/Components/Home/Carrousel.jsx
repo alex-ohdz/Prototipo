@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-import { getCollection } from '../../../firebase/index'
 
 export const Carrousel = () => {
   const [index, setIndex] = useState(0)
